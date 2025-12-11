@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "proposal_title": "Towards Effective Detection of N-Day Vulnerabilities in Third-Party Software Components",
+    "principal_investigator": "Charalambos Konstantinou",
+    "proposal_date": "2025-12-11",
+    "reviewer_name": "Mohsin Ahmed Shaikh",
+    "reviewer_id": "174988",
+    "aimcr_date": "2025-12-11",
+    "project_id": "65409"
+  },
+  "third_party_software": [
+    {
+      "name": "pytorch-2.9.1-ngc",
+      "checks": [
+        {
+          "name": "Project & Usage Alignment",
+          "score": 1,
+          "notes": ""
+        },
+        {
+          "name": "Prohibited Use Screening (LC 2.7)",
+          "score": 1,
+          "notes": ""
+        },
+        {
+          "name": "Restricted Entities Screening (LC 2.5)",
+          "score": 1,
+          "notes": ""
+        },
+        {
+          "name": "Source / Provenance",
+          "score": 1,
+          "notes": ""
+        },
+        {
+          "name": "License / Permissions",
+          "score": 1,
+          "notes": ""
+        },
+        {
+          "name": "Bundled Tools / Dependencies",
+          "score": 1,
+          "notes": ""
+        }
+      ]
+    }
+  ],
+  "source_code": [],
+  "datasets_user_files": [],
+  "models": [],
+  "observations": "",
+  "recommendation": ""
+}

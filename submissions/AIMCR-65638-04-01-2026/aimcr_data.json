@@ -629,12 +629,12 @@
     }
   ],
   "models": [],
-  "observations": "No clear request of which models are required for different objectives. Need to consult with the applicant and assess based on the inputs. ",
+  "observations": "No clear request of which models are required for different objectives. Need to consult with the applicant and assess based on the inputs.\nBoth ROLL and RLinf have maintainers from D5 countries. \nRoboMIND is also a D5 country's opensource contribution. ",
   "recommendation": "Recommended for grand challenge conditional to acceptable risk with models. ",
   "_submission_history": [
     {
-      "timestamp": "2026-01-04T10:44:02.856560",
-      "action": "initial_submission"
+      "timestamp": "2026-01-04T16:00:42.321200",
+      "action": "resubmission"
     }
   ]
 }

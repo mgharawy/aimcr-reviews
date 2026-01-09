@@ -168,17 +168,17 @@
         {
           "name": "Project & Usage Alignment",
           "score": 1,
-          "notes": "Web pretraining data."
+          "notes": "Web pretraining data. Aligns with approved research topic Datascience and engineering"
         },
         {
           "name": "Prohibited Use Screening (LC 2.7)",
           "score": 1,
-          "notes": "No indication of prohibited or restricted use (including military, weapons, surveillance, or intelligence functionality) is stated or implied in the FinePDFs dataset documentation, which describes the dataset as a large-scale PDF text corpus for research and model training; this assessment was conducted in accordance with LC 2.7."
+          "notes": "No indication of prohibited or restricted use (including military, weapons, surveillance, or intelligence functionality) is stated or implied in the FinePDFs dataset documentation, which describes the dataset as a large-scale PDF text corpus for research and model training."
         },
         {
           "name": "Restricted Entities Screening (LC 2.5)",
           "score": 1,
-          "notes": "\n    Originating Organization: HuggingFace and Common Crawl both in United States\n"
+          "notes": "Originating Organization: HuggingFace and Common Crawl both in United States\nThis entity is from non-D5 country."
         },
         {
           "name": "Prompts / Fine-tuning Scripts",
@@ -188,12 +188,12 @@
         {
           "name": "Sample Inspection",
           "score": 1,
-          "notes": "\n    Preview available by HuggingFace https://huggingface.co/datasets/HuggingFaceFW/finepdfs"
+          "notes": "Preview available by HuggingFace https://huggingface.co/datasets/HuggingFaceFW/finepdfs"
         },
         {
           "name": "Provenance",
           "score": 1,
-          "notes": "\n\n    Owner / Curator: HuggingFace / Fine Data\n\n    Primary Distribution Platform: Hugging Face\n\n    Repository: https://huggingface.co/datasets/HuggingFaceFW/finepdfs\n\n    Access Method: download via Hugging Face\n\n    Provenance:\n        Hugging Face does not claim ownership of the original PDFs\n            Primary raw source: Common Crawl\n        Hugging Face does own and license the compiled dataset artifact i.e., the database resulting from selection, transformation, and organization of the data\n        (24k downloads on HF, 1 commit, Dec 2025).\n\n    Maintenance Status: Actively maintained (last update 2025-12)\n"
+          "notes": "\n\n    Owner / Curator: HuggingFace / Fine Data\n\n    Primary Distribution Platform: Hugging Face\n\n    Repository: https://huggingface.co/datasets/HuggingFaceFW/finepdfs\n\n    Access Method: download via Hugging Face\n\n    Provenance:\n        Hugging Face does not claim ownership of the original PDFs\n            Primary raw source: Common Crawl\n        Hugging Face does own and license the compiled dataset artifact i.e., the database resulting from the selection, transformation, and organization of the data\n        (24k downloads on HF, 1 commit, Dec 2025).\n\n    Maintenance Status: Actively maintained (last update 2025-12)\n"
         },
         {
           "name": "License / Permissions",
@@ -288,27 +288,27 @@
         {
           "name": "Project & Usage Alignment",
           "score": 1,
-          "notes": "\n    Coding pretraining data.\n"
+          "notes": "Coding pretraining data. Aligns with approved research topic Datascience and engineering.\n"
         },
         {
           "name": "Prohibited Use Screening (LC 2.7)",
           "score": 1,
-          "notes": "o indication of prohibited or restricted use (including military, weapons, surveillance, or intelligence functionality) is stated or implied in the smolkalam dataset documentation, which describes the dataset as a language/text corpus for research and modeling purposes; this review was conducted in accordance with LC 2.7."
+          "notes": "No indication of prohibited or restricted use (including military, weapons, surveillance, or intelligence functionality) is stated or implied in the smolkalam dataset documentation, which describes the dataset as a language/text corpus for research and modeling purposes."
         },
         {
           "name": "Restricted Entities Screening (LC 2.5)",
           "score": 1,
-          "notes": "\n    Originating Organization: Sultan AlRashed in KSA.\n"
+          "notes": "\n    Originating Organization: Sultan AlRashed in KSA. He is part of the research team in the proposal. \n"
         },
         {
           "name": "Prompts / Fine-tuning Scripts",
           "score": 1,
-          "notes": "No files"
+          "notes": "No user files"
         },
         {
           "name": "Sample Inspection",
-          "score": 3,
-          "notes": "Not found"
+          "score": 1,
+          "notes": "Low risk. No sample inspection conducted."
         },
         {
           "name": "Provenance",
@@ -317,8 +317,8 @@
         },
         {
           "name": "License / Permissions",
-          "score": 3,
-          "notes": "\n    Not found\n"
+          "score": 2,
+          "notes": "No license attached to the release. \nThe risk is reduced to low because this is a member of the research team. "
         }
       ]
     },
@@ -364,6 +364,12 @@
     }
   ],
   "models": [],
-  "observations": "No Explicit AI / LLM Models Named",
-  "recommendation": ""
+  "observations": "- No Explicit AI / LLM Models Named. However, the proposal mentions not being close to 10^27 threshold of FLOPs. The model has also not be noted as proprietary however, it has indications of being a custom model architecture from the proposal, inspired by some small opensource models of the order of  \n- SmolKalam dataset has been published on HF by a member of the group, without a license. \n",
+  "recommendation": "Communicate all the observations to the applicant. \nRecommended for grand challenge. ",
+  "_submission_history": [
+    {
+      "timestamp": "2026-01-10T01:14:23.991621",
+      "action": "resubmission"
+    }
+  ]
 }

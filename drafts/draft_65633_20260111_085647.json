@@ -113,7 +113,7 @@
           "notes": "deepspeed 0.18.2\npackaging 25.0\npydantic 2.10.6\npydantic_core 2.27.2\neinops 0.8.1\nhjson 3.1.0\nmsgpack 1.1.1\nninja 1.13.0\nnumpy 1.24.4\npsutil 7.2.1\npy-cpuinfo 9.0.0\ntorch 2.2.2\ntqdm 4.67.1\nannotated-types 0.7.0\ntyping_extensions 4.13.2\nfilelock 3.16.1\nfsspec 2025.3.0\nJinja2 3.1.6\nnetworkx 3.1\nsympy 1.13.3\nMarkupSafe 2.1.5\nmpmath 1.3.0"
         }
       ]
-    },
+    }
   ],
   "source_code": [],
   "datasets_user_files": [

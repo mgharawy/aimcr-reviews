@@ -304,6 +304,12 @@
     }
   ],
   "models": [],
-  "observations": "No clear request of which models are required for different objectives. Need to consult with the applicant and assess based on the inputs.\nAuthor(s) plan to develop, scale, and train their own AI/LLM architectures from scratch.",
-  "recommendation": "Recommended for grand challenge. "
+  "observations": "No clear request of which models are required for different objectives. \nAuthor(s) plan to develop, scale, and train their own AI/LLM architectures from scratch.",
+  "recommendation": "Need to consult with the applicant which models they wish to use. Conditional to it, recommended for grand challenge.",
+  "_submission_history": [
+    {
+      "timestamp": "2026-01-11T23:22:26.145391",
+      "action": "resubmission"
+    }
+  ]
 }

@@ -825,41 +825,47 @@
         {
           "name": "Prohibited Use Screening (LC 2.7)",
           "score": 1,
-          "notes": "The arXiv documentation page does not contain \u201cmilitary\u201d, \u201cweapons/weapon\u201d, \u201cnuclear\u201d, \u201cdefense\u201d, or \u201csurveillance\u201d (by direct keyword search), and it frames uses around robotics/mixed reality and general 3D vision tasks. "
+          "notes": "No mention of sensitive terms in the documentation."
         },
         {
           "name": "Source / Provenance & Restricted Entities (LC 2.5)",
-          "score": 1,
-          "notes": "Contributors from D5 Country (China)\n\nThe work is authored by ByteDance Seed (with Bingyi Kang listed as corresponding author/project lead), and no LinkedIn links are provided in the paper page. \n"
+          "score": 2,
+          "notes": "https://github.com/ByteDance-Seed/Depth-Anything-3\nhttps://huggingface.co/depth-anything/DA3-BASE\nThe work is authored by ByteDance Seed (with Bingyi Kang listed as corresponding author/project lead).\n\nContributors from an entity from D5 Country.\n\n"
         },
         {
           "name": "License / Permissions",
           "score": 1,
-          "notes": "Source code headers indicate Apache License 2.0. \nPermission: Allows use, modification, and redistribution (including commercially) under Apache-2.0 conditions. \nRestriction/condition: You must preserve the license notice and provide attribution/NOTICE as required by Apache-2.0. \nRestriction/condition: If you distribute modified versions, you must state changes (per Apache-2.0 requirements)."
+          "notes": "Source code headers indicate Apache License 2.0. \nPermission: Allows use, modification, and redistribution (including commercially) under Apache-2.0 conditions. \nRestriction: You must preserve the license notice and provide attribution/NOTICE as required by Apache-2.0. \nRestriction: If you distribute modified versions, you must state changes (per Apache-2.0 requirements)."
         },
         {
           "name": "Training Data Documentation",
           "score": 1,
-          "notes": "\n\n    Dataset description:\n        A mixture of real-world depth datasets, synthetic data, and large-scale pseudo-labeled depth maps.\n        Designed to reduce domain bias and improve cross-dataset generalization.\n\n    Data provenance:\n        Public depth datasets and internally generated annotations.\n        Specific dataset names and proportions are partially described but not fully itemized.\n\nDA3 is trained exclusively on public academic datasets, with pose-geometry training datasets including (scenes): AriaSyntheticENV (99,950), Objaverse (505,557), Trellis (557,408), Co3dv2 (30,616), ARKitScenes (4,388), DL3DV (6,379), WildRGBD (23,050), ScanNet++ (230), and others.\n"
+          "notes": "The model is trained exclusively on public academic datasets, with pose-geometry training datasets including (scenes): AriaSyntheticENV (99,950), Objaverse (505,557), Trellis (557,408), Co3dv2 (30,616), ARKitScenes (4,388), DL3DV (6,379), WildRGBD (23,050), ScanNet++ (230), and others.\n"
         },
         {
           "name": "Customisation / Fine-tuning",
           "score": 1,
-          "notes": "\n    Depth Anything V3 supports:\n        Zero-shot depth inference\n        Optional fine-tuning for domain-specific scenes (e.g., indoor robotics, autonomous driving)\n    The released checkpoints are intended to work out-of-the-box without task-specific retraining.\nThe paper fine-tunes/derives downstream models for monocular relative depth (DA3-monocular), metric depth estimation (DA3-metric), and feed-forward novel view synthesis via 3D Gaussian Splatting by adding an extra head.\n"
+          "notes": "The released checkpoints are intended to work out-of-the-box without task-specific retraining. No specific fine tuning was done for the generalized variant. \n"
         },
         {
           "name": "FLOPS Calculation",
           "score": 1,
-          "notes": "Using a standard ViT-style FLOPs approximation for the backbone only (ignoring layernorm/softmax and small heads), and the paper\u2019s stated base resolution of 504 (patch size 14 \u21d2 tokens \u2248 1297), the estimated per-image compute is:\n\nDA3-Giant (ViT-g/14, 40 layers, d=1536): ~3.35 TFLOPs/image\n\nDA3-Large (ViT-L/14, 24 layers, d=1024): ~0.95 TFLOPs/image\n\nDA3-Base (ViT-B/14, 12 layers, d=768): ~0.28 TFLOPs/image\n\nDA3-Small (ViT-S/14, 12 layers, d=384): ~0.086 TFLOPs/image\n\nAssumptions used (so you can reuse/adjust): base resolution 504 is explicitly stated for training; token count uses (504/14)^2 + 1; ViT configs assumed as standard (/14 variants) and counts backbone compute only (DualDPT + camera head are comparatively small vs backbone)."
+          "notes": "model parameters range from 0.35B to 1.4B. \nFrom the paper https://arxiv.org/abs/2511.10647,  the giant variant of DA3 could take 10 days to train on 128 H100 GPUs. Considering BF16 and MFU of 45%, the training FLOPs can be estimated as:\n\nGPU-hours = 128 GPUs \u00d7 10 days \u00d7 24 hours  = 30720 GPU-hours\nGPU-seconds = 30720 \u00d7 3,600 = 110592000 GPU-seconds\n\nH100 BF16 peak = 989 TFLOPS\nEffective TFLOPS (45% MFU) = 989 \u00d7 0.45 = 445 TFLOPS\n\nTotal FLOPs = 445 \u00d7 10\u00b9\u00b2 \u00d7 110592000 seconds= 4.92 \u00d7 10\u00b2\u00b2 FLOPs\n      \n\nWell below 10^27 threshold."
         },
         {
           "name": "Sample Inspection",
           "score": 1,
-          "notes": "Inspection skipped"
+          "notes": "Sample inspection was skipped since it has been marked as low risk. "
         }
       ]
     }
   ],
-  "observations": "Observation 1 \u2014 Dataset list appears unusually large\n\nThe proposal lists an unusually large number of datasets, which may indicate over-aggregation or incomplete curation, so the authors should justify dataset necessity, clarify which datasets are actually required vs. optional, and provide a traceable mapping of each dataset to a specific objective/experiment.\n\nObservation 2 \u2014 Ambiguous provenance of xetaiz/mapanything Docker image\n\nThe provenance of the Docker image xetaiz/mapanything is unclear; the proposal should explicitly state who owns and maintains the image, whether it is an official image or community-built, provide the source Dockerfile/build pipeline, and document the exact upstream code commit(s) and dependency versions used to build it to support reproducibility and compliance.",
-  "recommendation": ""
+  "observations": "The provenance of some datasets has been flagged. ",
+  "recommendation": "Recommended for grand challenge ",
+  "_submission_history": [
+    {
+      "timestamp": "2026-01-11T23:19:23.568025",
+      "action": "resubmission"
+    }
+  ]
 }

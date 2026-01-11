@@ -28,7 +28,7 @@ st.set_page_config(
 )
 
 # GitHub Configuration
-GITHUB_REPO = "mshaikh786/aimcr-reviews"
+GITHUB_REPO = "mgharawy/aimcr-reviews"
 GITHUB_REPO_URL = f"https://github.com/{GITHUB_REPO}.git"
 LOCAL_REPO_PATH = Path.cwd() / ".aimcr_workspace"
 

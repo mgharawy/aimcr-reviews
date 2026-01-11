@@ -80,40 +80,40 @@
       ]
     },
     {
-      "name": "DeepSpeed",
+      "name": "Deepspeed",
       "checks": [
         {
           "name": "Project & Usage Alignment",
           "score": 1,
-          "notes": ""
+          "notes": "Distributed training framework from Microsoft. Aligned with approved research topic, datascience & engineering"
         },
         {
           "name": "Prohibited Use Screening (LC 2.7)",
           "score": 1,
-          "notes": ""
+          "notes": "No prohibited use indicated. Its a distributed training framework."
         },
         {
           "name": "Restricted Entities Screening (LC 2.5)",
           "score": 1,
-          "notes": ""
+          "notes": "The framework is developed and maintained by Microsoft. The entity is from non-D5 country."
         },
         {
           "name": "Source / Provenance",
           "score": 1,
-          "notes": ""
+          "notes": "https://github.com/microsoft/DeepSpeed\n\nMaintainer / Organization: Microsoft\n\nLast Commit Date: 4 days ago\n\nNumber of Stars: 41K\n\nNumber of Issues (Open/Closed): 1.1K\n\nNumber of PRs (Open/Closed): 102\n\nTotal Commits: 3,004"
         },
         {
           "name": "License / Permissions",
           "score": 1,
-          "notes": ""
+          "notes": "License: Apache License 2.0\n\nPermissions (Apache License 2.0 \u2013 concise version):\n\nUse, reproduce, modify, and create derivative works of the software.\n\nPublicly display, perform, sublicense, and distribute the original work or derivatives (source or binary).\n\nUse patent claims from contributors (if necessarily infringed by their contribution).\n\nSell, offer to sell, import, or transfer the work.\n\nAdd your own copyright notice and apply different license terms to your modifications (if overall redistribution complies).\n\nOffer support, warranty, or indemnity for a fee (on your own responsibility).\n\nUse for any purpose, including commercial.\n\nRestrictions:\n\nProvide recipients with a copy of this license.\n\nInclude prominent notices of changes in modified files.\n\nKeep all original copyright, patent, trademark, and attribution notices in source form.\n\nInclude the NOTICE file (if present) in derivatives, with readable attribution.\n\nDo not use licensor's trademarks, trade names, or product names (except for origin description and NOTICE reproduction).\n\nPatent license ends if you sue any entity for patent infringement related to the work."
         },
         {
           "name": "Bundled Tools / Dependencies",
           "score": 1,
-          "notes": ""
+          "notes": "deepspeed 0.18.2\npackaging 25.0\npydantic 2.10.6\npydantic_core 2.27.2\neinops 0.8.1\nhjson 3.1.0\nmsgpack 1.1.1\nninja 1.13.0\nnumpy 1.24.4\npsutil 7.2.1\npy-cpuinfo 9.0.0\ntorch 2.2.2\ntqdm 4.67.1\nannotated-types 0.7.0\ntyping_extensions 4.13.2\nfilelock 3.16.1\nfsspec 2025.3.0\nJinja2 3.1.6\nnetworkx 3.1\nsympy 1.13.3\nMarkupSafe 2.1.5\nmpmath 1.3.0"
         }
       ]
-    }
+    },
   ],
   "source_code": [],
   "datasets_user_files": [

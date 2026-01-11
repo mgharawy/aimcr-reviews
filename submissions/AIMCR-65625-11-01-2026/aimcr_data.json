@@ -303,104 +303,13 @@
       ]
     }
   ],
-  "models": [
-    {
-      "name": "NanoGPT",
-      "checks": [
-        {
-          "name": "Project & Usage Alignment",
-          "score": 1,
-          "notes": "The proposal is to use a model similar to the NanoGPT model published in https://github.com/karpathy/nanoGPT\n\nAligns with approved research topic Material Sciences and Datascience & engineering"
-        },
-        {
-          "name": "Prohibited Use Screening (LC 2.7)",
-          "score": 1,
-          "notes": " No mention of sensitive terms in the paper or in Github reporsitory."
-        },
-        {
-          "name": "Source / Provenance & Restricted Entities (LC 2.5)",
-          "score": 1,
-          "notes": "Nvidia / Andrej Karpathy (MIT-licensed research)"
-        },
-        {
-          "name": "License / Permissions",
-          "score": 1,
-          "notes": "MIT license Permissive to use for the project."
-        },
-        {
-          "name": "Training Data Documentation",
-          "score": 1,
-          "notes": "Non-specified Datasets from Huggingface"
-        },
-        {
-          "name": "Customisation / Fine-tuning",
-          "score": 1,
-          "notes": "No fine-tuning for downstream tasks are available."
-        },
-        {
-          "name": "FLOPS Calculation",
-          "score": 1,
-          "notes": "For nanoGPT, the typical parameter count is on the order of 100\u2013125 million, and using standard transformer FLOPs estimates (\u22486\u00d7 parameters per token for training), the maximum total FLOPs over realistic training runs remains many orders of magnitude below 10\u00b2\u2077, and cannot reach or exceed that threshold."
-        },
-        {
-          "name": "Sample Inspection",
-          "score": 1,
-          "notes": "low risk, no inspection conducted."
-        }
-      ]
-    },
-    {
-      "name": "MediumGPT",
-      "checks": [
-        {
-          "name": "Project & Usage Alignment",
-          "score": 1,
-          "notes": "The proposal is to use a model similar to the MediumGPT model, a gpt model variant.\n\nMultiple implementations publicly available on GitHub, no specific source specified.\n\nAligns with approved research topic Material Sciences and Datascience & engineering"
-        },
-        {
-          "name": "Prohibited Use Screening (LC 2.7)",
-          "score": 1,
-          "notes": " No mention of sensitive terms."
-        },
-        {
-          "name": "Source / Provenance & Restricted Entities (LC 2.5)",
-          "score": 1,
-          "notes": "open source community\n\nMultiple implementations publicly available on GitHub, no specific source specified.\n"
-        },
-        {
-          "name": "License / Permissions",
-          "score": 1,
-          "notes": "MIT license"
-        },
-        {
-          "name": "Training Data Documentation",
-          "score": 1,
-          "notes": "Non-specified"
-        },
-        {
-          "name": "Customisation / Fine-tuning",
-          "score": 1,
-          "notes": "No fine-tuning for downstream tasks are available."
-        },
-        {
-          "name": "FLOPS Calculation",
-          "score": 1,
-          "notes": "Parameters are typically around 300\u2013400 million, and under standard transformer FLOPs estimates and realistic dataset sizes, the maximum total FLOPs still remain far below 10\u00b2\u2077, and cannot reach or exceed that limit."
-        },
-        {
-          "name": "Sample Inspection",
-          "score": 1,
-          "notes": "low risk, no inspection conducted."
-        }
-      ]
-    }
-  ],
-  "observations": "",
-  "recommendation": "",
+  "models": [],
+  "observations": "No clear request of which models are required for different objectives. Need to consult with the applicant and assess based on the inputs.\nAuthor(s) plan to develop, scale, and train their own AI/LLM architectures from scratch.",
+  "recommendation": "Recommended for grand challenge. ",
   "_submission_history": [
     {
-      "timestamp": "2026-01-11T11:57:03.412128",
-      "action": "initial_submission"
+      "timestamp": "2026-01-11T13:24:28.515490",
+      "action": "resubmission"
     }
   ]
 }

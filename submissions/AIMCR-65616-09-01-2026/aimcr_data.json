@@ -364,11 +364,11 @@
     }
   ],
   "models": [],
-  "observations": "- No Explicit AI / LLM Models Named. However, the proposal mentions not being close to 10^27 threshold of FLOPs. The model has also not be noted as proprietary however, it has indications of being a custom model architecture from the proposal, inspired by some small opensource models of the order of  \n- SmolKalam dataset has been published on HF by a member of the group, without a license. \n",
-  "recommendation": "Communicate all the observations to the applicant. \nRecommended for grand challenge. ",
+  "observations": "Indication of 300B tokens to be used to train a 3B parameter model. An additional indication of the 8B model is present in the proposal for synthetic data generation. Though specific models have not been requested, the given requirements fall well below the 10^27 FLOPs threshold with the requested number of hours. \n\nSmolKalam dataset has been published on HF by a member of the group, without a license. \n",
+  "recommendation": "Recommended for grand challenge. ",
   "_submission_history": [
     {
-      "timestamp": "2026-01-10T01:14:23.991621",
+      "timestamp": "2026-01-11T23:30:57.492089",
       "action": "resubmission"
     }
   ]

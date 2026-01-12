@@ -450,7 +450,12 @@ def render_artifact_form(section_key, section_title, checks):
                 col1, col2, col3 = st.columns([6, 1, 1])
                 
                 with col1:
-                    st.markdown(f"### Artifact {idx + 1}: {artifact.get('name', 'Unnamed')}")
+                    artifact_name = artifact.get('name', 'Unnamed')
+                    # Add proprietary indicator for models
+                    if section_key == 'models' and artifact.get('is_proprietary', False):
+                        st.markdown(f"### Artifact {idx + 1}: {artifact_name} 🔒 *Proprietary*")
+                    else:
+                        st.markdown(f"### Artifact {idx + 1}: {artifact_name}")
                 
                 with col2:
                     if st.button("✏️ Edit", key=f"edit_{section_key}_{idx}", use_container_width=True):
@@ -464,6 +469,12 @@ def render_artifact_form(section_key, section_title, checks):
                 
                 # Details in expander
                 with st.expander("View Details", expanded=False):
+                    # Show proprietary status for models
+                    if section_key == 'models':
+                        proprietary_status = "Yes ✓" if artifact.get('is_proprietary', False) else "No"
+                        st.write(f"**Marked as Proprietary in Proposal:** {proprietary_status}")
+                        st.write("")
+                    
                     # Calculate individual artifact score
                     artifact_score = sum(check['score'] for check in artifact['checks'])
                     has_critical = any(check['score'] == 5 for check in artifact['checks'])
@@ -554,6 +565,18 @@ def render_artifact_form(section_key, section_title, checks):
                 'notes': notes
             })
         
+        # Add proprietary checkbox for Models section only (not part of risk scoring)
+        is_proprietary = False
+        if section_key == 'models':
+            st.write("---")
+            st.write("### Additional Information (Not part of risk scoring)")
+            widget_suffix = f"edit_{st.session_state.edit_index[section_key]}" if edit_mode else "add"
+            is_proprietary = st.checkbox(
+                "Has the model been marked proprietary in the proposal?",
+                value=artifact.get('is_proprietary', False) if artifact else False,
+                key=f"{section_key}_proprietary_{widget_suffix}"
+            )
+        
         col1, col2, col3 = st.columns([1, 1, 2])
         
         with col1:
@@ -571,6 +594,10 @@ def render_artifact_form(section_key, section_title, checks):
                 'name': artifact_name,
                 'checks': checks_data
             }
+            
+            # Add proprietary field for Models section
+            if section_key == 'models':
+                new_artifact['is_proprietary'] = is_proprietary
             
             if edit_mode:
                 st.session_state.data[section_key][st.session_state.edit_index[section_key]] = new_artifact
@@ -625,29 +652,68 @@ elif st.session_state.current_section == 'final_review':
     }
     
     overall_critical = False
+    section_scores_list = []
     
+    # Display section scores with risk categories
     for section_name, (section_key, checks) in sections_summary.items():
         artifacts = st.session_state.data[section_key]
         if artifacts:
             total_risk, max_scores = calculate_section_risk(artifacts)
-            has_critical = any(score == 5 for score in max_scores)
             
-            if has_critical or total_risk >= 21:
+            # Find the highest individual score in this section
+            highest_score = max(max_scores) if max_scores else 1
+            
+            # Determine risk category based on highest score
+            risk_category = RISK_LEVELS.get(highest_score, "Unknown")
+            risk_color = get_risk_color(highest_score)
+            
+            # Check if critical
+            if highest_score == 5:
                 overall_critical = True
-                st.markdown(f"### <span style='color:red;'>{section_name}: {total_risk} ⚠️ CRITICAL</span>", unsafe_allow_html=True)
-            else:
-                st.write(f"### {section_name}: {total_risk}")
+            
+            # Determine Pass/Fail based on total_risk (sum of max scores per question)
+            # total_risk is already calculated as sum of max values from calculate_section_risk
+            pass_fail = "FAIL" if total_risk >= 21 else "PASS"
+            pass_fail_color = "red" if total_risk >= 21 else "green"
+            
+            section_scores_list.append({
+                'name': section_name,
+                'total_score': total_risk,
+                'highest_score': highest_score,
+                'risk_category': risk_category,
+                'artifacts': len(artifacts),
+                'max_scores': max_scores,
+                'checks': checks,
+                'pass_fail': pass_fail
+            })
+            
+            # Display section with score and category
+            st.markdown(f"""
+            <div style='padding: 15px; border-left: 5px solid {risk_color}; margin: 10px 0; background-color: rgba(128,128,128,0.05);'>
+                <div style='font-size: 18px; font-weight: bold;'>{section_name}</div>
+                <div style='margin-top: 8px;'>
+                    <span style='font-size: 16px;'>Total Score: <strong>{total_risk}</strong></span>
+                    <span style='margin-left: 20px; font-size: 16px;'>Risk Category: <strong style='color: {risk_color};'>{risk_category}</strong></span>
+                    <span style='margin-left: 20px; font-size: 16px;'>Status: <strong style='color: {pass_fail_color};'>{pass_fail}</strong></span>
+                </div>
+            </div>
+            """, unsafe_allow_html=True)
             
             with st.expander(f"View {section_name} Details"):
                 st.write(f"**Number of artifacts:** {len(artifacts)}")
+                st.write(f"**Highest individual score:** {highest_score} ({risk_category})")
                 st.write("**Maximum scores per check:**")
                 for check_name, max_score in zip(checks, max_scores):
-                    if max_score == 5:
-                        st.markdown(f"- {check_name}: <span style='color:red; font-weight:bold;'>{max_score}</span>", unsafe_allow_html=True)
-                    else:
-                        st.write(f"- {check_name}: {max_score}")
+                    check_color = get_risk_color(max_score)
+                    check_risk = RISK_LEVELS.get(max_score, "Unknown")
+                    st.markdown(f"- {check_name}: <span style='color:{check_color}; font-weight:bold;'>{max_score}</span> ({check_risk})", unsafe_allow_html=True)
         else:
-            st.write(f"### {section_name}: No artifacts added")
+            st.markdown(f"""
+            <div style='padding: 15px; border-left: 5px solid gray; margin: 10px 0; background-color: rgba(128,128,128,0.05);'>
+                <div style='font-size: 18px; font-weight: bold;'>{section_name}</div>
+                <div style='margin-top: 8px; color: gray;'>No artifacts added</div>
+            </div>
+            """, unsafe_allow_html=True)
     
     st.divider()
     
@@ -659,20 +725,44 @@ elif st.session_state.current_section == 'final_review':
     
     st.divider()
     
+    # Calculate cumulative risk level (highest across all sections)
+    cumulative_risk_score = max([s['highest_score'] for s in section_scores_list]) if section_scores_list else 1
+    cumulative_risk_category = RISK_LEVELS.get(cumulative_risk_score, "No Risk")
+    cumulative_risk_color = get_risk_color(cumulative_risk_score)
+    
+    # Determine cumulative Pass/Fail - fails if ANY section fails (total >= 21)
+    any_section_failed = any(s.get('pass_fail') == 'FAIL' for s in section_scores_list)
+    cumulative_pass_fail = "FAIL" if any_section_failed else "PASS"
+    cumulative_pass_fail_color = "red" if any_section_failed else "green"
+    
     # Observations and Recommendations
     st.subheader("Observations and Recommendations")
     
-    st.session_state.data['observations'] = st.text_area(
-        "Observations",
-        value=st.session_state.data['observations'],
-        height=150
-    )
+    col1, col2 = st.columns([2, 1])
     
-    st.session_state.data['recommendation'] = st.text_area(
-        "Recommendation",
-        value=st.session_state.data['recommendation'],
-        height=150
-    )
+    with col1:
+        st.session_state.data['observations'] = st.text_area(
+            "Observations",
+            value=st.session_state.data['observations'],
+            height=150
+        )
+        
+        st.session_state.data['recommendation'] = st.text_area(
+            "Recommendation",
+            value=st.session_state.data['recommendation'],
+            height=150
+        )
+    
+    with col2:
+        st.markdown(f"""
+        <div style='padding: 20px; border: 4px solid {cumulative_risk_color}; border-radius: 10px; text-align: center; background-color: rgba(128,128,128,0.05); height: 100%; display: flex; flex-direction: column; justify-content: center;'>
+            <div style='font-size: 16px; font-weight: bold; margin-bottom: 15px;'>CUMULATIVE RISK LEVEL</div>
+            <div style='font-size: 48px; font-weight: bold; color: {cumulative_risk_color}; margin: 10px 0;'>{cumulative_risk_score}</div>
+            <div style='font-size: 20px; font-weight: bold; color: {cumulative_risk_color};'>{cumulative_risk_category}</div>
+            <div style='font-size: 18px; font-weight: bold; color: {cumulative_pass_fail_color}; margin-top: 15px;'>{cumulative_pass_fail}</div>
+            <div style='font-size: 12px; margin-top: 10px; color: gray;'>Highest risk across all sections</div>
+        </div>
+        """, unsafe_allow_html=True)
     
     st.divider()
     

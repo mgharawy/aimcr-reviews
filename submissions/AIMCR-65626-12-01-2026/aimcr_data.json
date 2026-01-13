@@ -568,7 +568,7 @@
         {
           "name": "Provenance",
           "score": 1,
-          "notes": "\n    Owner / Curator: UniProt consortium / (https://www.uniprot.org/)\n    Primary Distribution Platform: Download via ftb website\n    Repository: (https://ftp.uniprot.org/pub/databases/uniprot/)\n    Access Method: download via website\n    Provenance:\n\n        UniProt is a central protein sequence and annotation database maintained by the UniProt Consortium, a collaboration between:\n\n            European Bioinformatics Institute (EMBL-EBI)\n\n            Swiss Institute of Bioinformatics (SIB)\n\n            Protein Information Resource (PIR)\n"
+          "notes": "    Owner / Curator: UniProt consortium / (https://www.uniprot.org/)\n    Primary Distribution Platform: Download via https://www.uniprot.org/uniprotkb\n    Repository: (https://ftp.uniprot.org/pub/databases/uniprot/)\n    Access Method: download via website\n    Provenance:\n\n        UniProt is a central protein sequence and annotation database maintained by the UniProt Consortium, a collaboration between:\n\n            European Bioinformatics Institute (EMBL-EBI)\n\n            Swiss Institute of Bioinformatics (SIB)\n\n            Protein Information Resource (PIR)\n"
         },
         {
           "name": "License / Permissions",
@@ -608,7 +608,7 @@
         {
           "name": "Provenance",
           "score": 1,
-          "notes": "\n    Owner / Curator: UniProt consortium / (https://www.uniprot.org/uniref)\n    Primary Distribution Platform: Download via ftb website\n    Repository: (https://ftp.uniprot.org/pub/databases/uniprot/uniref/uniref100) (https://ftp.uniprot.org/pub/databases/uniprot/uniref/uniref90) (https://ftp.uniprot.org/pub/databases/uniprot/uniref/uniref50)\n    Access Method: download via website\n    Provenance:\n\n        The UniProt Reference Clusters (UniRef) provide clustered sets of sequences from the UniProt Knowledgebase maintained by the UniProt Consortium, a collaboration between:\n\n            European Bioinformatics Institute (EMBL-EBI)\n\n            Swiss Institute of Bioinformatics (SIB)\n\n            Protein Information Resource (PIR)\n"
+          "notes": "\n    Owner / Curator: UniProt consortium / (https://www.uniprot.org/uniref)\n    Primary Distribution Platform: Download via https://www.uniprot.org/uniref\n    Repository: (https://ftp.uniprot.org/pub/databases/uniprot/uniref/uniref100) (https://ftp.uniprot.org/pub/databases/uniprot/uniref/uniref90) (https://ftp.uniprot.org/pub/databases/uniprot/uniref/uniref50)\n    Access Method: download via website\n    Provenance:\n\n        The UniProt Reference Clusters (UniRef) provide clustered sets of sequences from the UniProt Knowledgebase maintained by the UniProt Consortium, a collaboration between:\n\n            European Bioinformatics Institute (EMBL-EBI)\n\n            Swiss Institute of Bioinformatics (SIB)\n\n            Protein Information Resource (PIR)\n"
         },
         {
           "name": "License / Permissions",
@@ -648,7 +648,7 @@
         {
           "name": "Provenance",
           "score": 1,
-          "notes": "RefSeq has been operated by NCBI since the early 2000s (documented in foundational RefSeq publications) and remains maintained by NCBI. "
+          "notes": "RefSeq has been operated by NCBI since the early 2000s (documented in foundational RefSeq publications) and remains maintained by NCBI.  https://ftp.ncbi.nlm.nih.gov/refseq/release/ "
         },
         {
           "name": "License / Permissions",
@@ -688,7 +688,7 @@
         {
           "name": "Provenance",
           "score": 1,
-          "notes": "MetaVR is presented as a successor/expansion of prior viral genome database efforts (described in recent NAR/PubMed records) and is maintained by the MetaVR team associated with BSRC \u201cAlexander Fleming.\u201d "
+          "notes": "MetaVR is presented as a successor/expansion of prior viral genome database efforts (described in recent NAR/PubMed records) and is maintained by the MetaVR team associated with BSRC \u201cAlexander Fleming.\u201d  https://meta-virome.org/ "
         },
         {
           "name": "License / Permissions",
@@ -728,7 +728,7 @@
         {
           "name": "Provenance",
           "score": 1,
-          "notes": "metagRoot is introduced in recent literature as a curated root-microbiome protein-family database and is maintained by the metagRoot authors/team (BSRC \u201cAlexander Fleming\u201d affiliation appears in records). "
+          "notes": "metagRoot is introduced in recent literature as a curated root-microbiome protein-family database and is maintained by the metagRoot authors/team (BSRC \u201cAlexander Fleming\u201d affiliation appears in records).  https://pavlopoulos-lab.org/metagroot/"
         },
         {
           "name": "License / Permissions",
@@ -768,7 +768,7 @@
         {
           "name": "Provenance",
           "score": 1,
-          "notes": "NMPFamsDB was introduced by its author team (published in Nucleic Acids Research) and is maintained by that project team (BSRC \u201cAlexander Fleming\u201d affiliation appears in the publication record). "
+          "notes": "NMPFamsDB was introduced by its author team (published in Nucleic Acids Research) and is maintained by that project team (BSRC \u201cAlexander Fleming\u201d affiliation appears in the publication record).  https://nmpfamsdb.org/ "
         },
         {
           "name": "License / Permissions",
@@ -808,7 +808,7 @@
         {
           "name": "Provenance",
           "score": 1,
-          "notes": "UHGV was created and distributed as a JGI-hosted catalog (with recent releases shared via UHGV/JGI channels) and is maintained by the UHGV/JGI team. "
+          "notes": "UHGV was created and distributed as a JGI-hosted catalog (with recent releases shared via UHGV/JGI channels) and is maintained by the UHGV/JGI team. https://uhgv.jgi.doe.gov/ "
         },
         {
           "name": "License / Permissions",
@@ -848,7 +848,7 @@
         {
           "name": "Provenance",
           "score": 1,
-          "notes": "IMG has been operated as a DOE-JGI microbial genomes resource since at least the early 2010s (documented in IMG publications) and remains maintained by DOE-JGI. "
+          "notes": "IMG has been operated as a DOE-JGI microbial genomes resource since at least the early 2010s (documented in IMG publications) and remains maintained by DOE-JGI. https://img.jgi.doe.gov/ "
         },
         {
           "name": "License / Permissions",
@@ -888,7 +888,7 @@
         {
           "name": "Provenance",
           "score": 1,
-          "notes": "MGnify originated as EBI Metagenomics and was rebranded as MGnify (noted in MGnify documentation), and is maintained by EMBL-EBI. "
+          "notes": "MGnify originated as EBI Metagenomics and was rebranded as MGnify (noted in MGnify documentation), and is maintained by EMBL-EBI.  https://www.ebi.ac.uk/metagenomics "
         },
         {
           "name": "License / Permissions",
@@ -928,7 +928,7 @@
         {
           "name": "Provenance",
           "score": 1,
-          "notes": "UniParc was introduced as part of UniProt\u2019s architecture to maintain stable identifiers for unique sequences aggregated from many sources and is maintained by the UniProt Consortium. "
+          "notes": "UniParc was introduced as part of UniProt\u2019s architecture to maintain stable identifiers for unique sequences aggregated from many sources and is maintained by the UniProt Consortium. https://www.uniprot.org/uniparc "
         },
         {
           "name": "License / Permissions",

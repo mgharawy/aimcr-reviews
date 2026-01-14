@@ -1,0 +1,123 @@
+{
+  "metadata": {
+    "proposal_title": "Undefined",
+    "principal_investigator": "Maurizio Filippone",
+    "proposal_date": "2025-10-23",
+    "reviewer_name": "Mohsin Ahmed Shaikh",
+    "reviewer_id": "174988",
+    "aimcr_date": "2026-01-14",
+    "project_id": "65623"
+  },
+  "third_party_software": [
+    {
+      "name": "PyTorch",
+      "checks": [
+        {
+          "name": "Project & Usage Alignment",
+          "score": 1,
+          "notes": "PyTorch serves as the core deep learning framework.\nAligns with the approved research topic Datascience and engineering."
+        },
+        {
+          "name": "Prohibited Use Screening (LC 2.7)",
+          "score": 1,
+          "notes": "No mention of sensitive terms in the documentation of PyTorch."
+        },
+        {
+          "name": "Restricted Entities Screening (LC 2.5)",
+          "score": 1,
+          "notes": "Originally developed by Meta and now governed by Linux Foundation.\nEntities are from Non-D5 country."
+        },
+        {
+          "name": "Source / Provenance",
+          "score": 1,
+          "notes": "Source Channel:\n\nPyPI: https://pypi.org/project/torch/2.7.0/\n\nGitHub: https://github.com/pytorch/pytorch\n\nConda: https://anaconda.org/pytorch/pytorch\n\nGitHub Repository Metadata:\n\nOwner / Organization: pytorch\n\nRepository: pytorch/pytorch\n\nDescription: Tensors and Dynamic neural networks in Python with strong GPU acceleration\n\nStars: 96,500+\n\nForks: 26,500+\n\nOpen Issues: ~18,000\n\nLast Commit Date: 2026-01-14 (Active daily)\n\nActivity Health: Excellent"
+        },
+        {
+          "name": "License / Permissions",
+          "score": 1,
+          "notes": "BSD-3-Clause License\n\nCan be used for academic purposes?\tYes\n\nCan be used for commercial use?\tYes\n\nModification allowed?\tYes\n\nRedistribution allowed?\tYes\n\nAttribution required?\tYes\n\nCopyleft obligations?\tNo"
+        },
+        {
+          "name": "Bundled Tools / Dependencies",
+          "score": 1,
+          "notes": "CUDA cuBLAS NVIDIA cuDNN NVIDIA NCCL (optimized for NVLink) NVIDIA Data Loading Library (DALI) TensorRT Torch-TensorRT"
+        }
+      ]
+    },
+    {
+      "name": "camel-detector-training:latest",
+      "checks": [
+        {
+          "name": "Project & Usage Alignment",
+          "score": 1,
+          "notes": "The container providea the training environment for distributed deep learning on satellite imagery.\n\nAligns with the approved research topic Datascience and engineering.\n"
+        },
+        {
+          "name": "Prohibited Use Screening (LC 2.7)",
+          "score": 1,
+          "notes": "No official documentation found.Not found publicly on Nvidia NGC"
+        },
+        {
+          "name": "Restricted Entities Screening (LC 2.5)",
+          "score": 1,
+          "notes": "Not found publicly on Nvidia NGC"
+        },
+        {
+          "name": "Source / Provenance",
+          "score": 1,
+          "notes": "Not publicly found on Nvidia NGC. Could be from Private / enterprise Nvidia NGC repo"
+        },
+        {
+          "name": "License / Permissions",
+          "score": 1,
+          "notes": "ontainer License Considerations:\n\nBase NGC Container: Governed by NVIDIA NGC License Agreement\n\nPyTorch: BSD-3-Clause\n\nCUDA Toolkit: NVIDIA CUDA EULA (free but proprietary)\n\ncuDNN: NVIDIA cuDNN License (free but proprietary)\n\nUbuntu 22.04: Various open-source licenses\n\nCan be used for academic purposes?\tYes\n\nCan be used for commercial use?\tYes (review NGC and CUDA licenses)\n\nModification allowed?\tYes (for open-source components)\n\nRedistribution allowed?\tLimited (NGC base, CUDA restrictions)\n\nAttribution required?\tYes\n\nCopyleft obligations?\tNo (BSD/Apache components)\n\nImportant Notes:\n\nNVIDIA NGC containers require acceptance of NGC terms\n\nCUDA and cuDNN are proprietary but freely available\n\nCommercial use permitted but review NVIDIA's license terms\n\nRedistribution of modified NGC containers may have restrictions"
+        },
+        {
+          "name": "Bundled Tools / Dependencies",
+          "score": 1,
+          "notes": "N/A"
+        }
+      ]
+    },
+    {
+      "name": "Container: satellite-preprocessing:latest",
+      "checks": [
+        {
+          "name": "Project & Usage Alignment",
+          "score": 1,
+          "notes": "The image provides a preprocessing pipeline for satellite imagery.\n\nAligns with the approved research topic Datascience and engineering."
+        },
+        {
+          "name": "Prohibited Use Screening (LC 2.7)",
+          "score": 1,
+          "notes": "No official documentation found.Not found publicly on DockerHub."
+        },
+        {
+          "name": "Restricted Entities Screening (LC 2.5)",
+          "score": 1,
+          "notes": "Not found publicly on DockerHub."
+        },
+        {
+          "name": "Source / Provenance",
+          "score": 1,
+          "notes": "Not publicly found on DockerHub. Could be from Private repo"
+        },
+        {
+          "name": "License / Permissions",
+          "score": 1,
+          "notes": "N/A, Not publicly found on DockerHub. "
+        },
+        {
+          "name": "Bundled Tools / Dependencies",
+          "score": 1,
+          "notes": "N/A, Not publicly found on DockerHub. "
+        }
+      ]
+    }
+  ],
+  "source_code": [],
+  "datasets_user_files": [],
+  "models": [],
+  "observations": "",
+  "recommendation": ""
+}

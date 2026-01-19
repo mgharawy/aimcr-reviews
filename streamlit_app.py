@@ -94,7 +94,7 @@ SECTION_CHECK_HELP = {
         
         'Prohibited Use Screening (LC 2.7)': "Description / Guidance: Review for any indication of prohibited uses/functionality (e.g., military, weapons, surveillance). Explicitly reference LC 2.7.\n\nExample(s) / Reference: Package description includes 'surveillance' or 'military' functionality.",
         
-        'Restricted Entities Screening (LC 2.5)': "Description / Guidance: Scan/review software origin, contributors, and metadata for restricted countries/entities. Explicitly reference LC 2.5.\n\nExample(s) / Reference: Maintainer from D:5 country, Entity List, SDN List.",
+        'D5+M affiliation Screening (LC 2.5)': "Description / Guidance: Scan/review software origin, contributors, and metadata for restricted countries/entities. Explicitly reference LC 2.5.\n\nExample(s) / Reference: Maintainer from D:5 country, Entity List, SDN List.",
         
         'Source / Provenance': "Description / Guidance: Verify source repository authenticity and integrity; review dependencies for provenance and approval status.\n\nExample(s) / Reference: Software from official GitHub repo; dependencies from trusted sources.",
         
@@ -122,7 +122,7 @@ SECTION_CHECK_HELP = {
         
         'Prohibited Use Screening (LC 2.7)': "Description / Guidance: Review for any indication of prohibited uses (e.g., military, weapons, surveillance). Explicitly reference LC 2.7.\n\nExample(s) / Reference: Dataset contains 'military' or 'surveillance' keywords.",
         
-        'Restricted Entities Screening (LC 2.5)': "Description / Guidance: Scan/review dataset fields, variables, and metadata for restricted countries/entities. Explicitly reference LC 2.5.\n\nExample(s) / Reference: Data from/about D:5 countries, Entity List, SDN List.",
+        'D5+M affiliation Screening (LC 2.5)': "Description / Guidance: Scan/review dataset fields, variables, and metadata for restricted countries/entities. Explicitly reference LC 2.5.\n\nExample(s) / Reference: Data from/about D:5 countries, Entity List, SDN List.",
         
         'Prompts / Fine-tuning Scripts': "Description / Guidance: Scan/review prompts and fine-tuning scripts for keywords or instructions that could enable or encourage non-compliant outputs or domains.\n\nExample(s) / Reference: Prompt includes 'target military installation'.",
         
@@ -157,7 +157,7 @@ SECTION_CHECKS = {
     'third_party_software': [
         'Project & Usage Alignment',
         'Prohibited Use Screening (LC 2.7)',
-        'Restricted Entities Screening (LC 2.5)',
+        'D5+M affiliation Screening (LC 2.5)',
         'Source / Provenance',
         'License / Permissions',
         'Bundled Tools / Dependencies'
@@ -173,7 +173,7 @@ SECTION_CHECKS = {
     'datasets_user_files': [
         'Project & Usage Alignment',
         'Prohibited Use Screening (LC 2.7)',
-        'Restricted Entities Screening (LC 2.5)',
+        'D5+M affiliation Screening (LC 2.5)',
         'Prompts / Fine-tuning Scripts',
         'Sample Inspection',
         'Provenance',

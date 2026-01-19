@@ -97,7 +97,7 @@
           "notes": "Check the dataset documentation for the presence of sensitive terms like \"military\", \"weapons\" and \"nuclear\" etc and or inferring terms or use cases.\nIf no mention is found, the response will be: \n\nNo mention of sensitive terms in the documentation classified in Prohibited Use Screening in accordance with LC 2.7."
         },
         {
-          "name": "Restricted Entities Screening (LC 2.5)",
+          "name": "D5+M affiliation Screening (LC 2.5)",
           "score": 1,
           "notes": "Check the developer or maintainer for D5+M affiliation."
         },

@@ -1000,7 +1000,7 @@
         {
           "name": "Prohibited Use Screening (LC 2.7)",
           "score": 1,
-          "notes": "\u201cNo mention of sensitive terms in the documentation classified in Prohibited Use Screening in accordance with LC 2.7.\u201d"
+          "notes": "No mention of sensitive terms in the documentation classified in Prohibited Use Screening in accordance with LC 2.7."
         },
         {
           "name": "Source / Provenance & D5+M Affiliation Screening (LC 2.5)",
@@ -1046,10 +1046,10 @@
         {
           "name": "Prohibited Use Screening (LC 2.7)",
           "score": 2,
-          "notes": "No occurrences were found for the following terms (case-insensitive / substring match): military, weapons, nuclear, defense, surveillance, intelligence. "
+          "notes": "No mention of sensitive terms in the documentation classified in Prohibited Use Screening in accordance with LC 2.7."
         },
         {
-          "name": "Source / Provenance & Restricted Entities (LC 2.5)",
+          "name": "Source / Provenance & D5+M Affiliation Screening (LC 2.5)",
           "score": 1,
           "notes": "https://github.com/facebookresearch/JMP/tree/main/src/jmp\nMeta Research - located in California, USA.\nThe entity is from non-D5 country."
         },
@@ -1071,7 +1071,7 @@
         {
           "name": "FLOPS Calculation",
           "score": 1,
-          "notes": "The JMP work reports scaling up to a model with ~235M trainable parameters (parameter count depends on the specific checkpoint/config). This range of trainable parameters is safe to assume it will be below the FLOPs threshold."
+          "notes": "The JMP work reports scaling up to a model with ~235M trainable parameters (parameter count depends on the specific checkpoint/config). \n\nPretraining dataset tokens estimate is : 89 x 10^9 + 1.8 x 10^12 ~ 1.889 x 10^12\nTherefore pre-trained model will have:\n \n6 x 153 x 10^6 x 1.889 x 10^12 = 1.734 x 10^21\n\nIf the applicants, as they suggest, decide to train this model from the scratch using the pre-training dataset indicated:\n\nODAC23: 657 x 10^9\nODAC25: 1.2  x 10^12\nOC20      :  89  x 10^9\nOMol      :  384 x 10^9\nOMat25 :    50  x 10^9\n\nand for fine-tuning \nMatBench: 400 x 10^6\nin-house: 5.6 x 10^9\n\nTotal tokens for pre-training: 2.38x10^12 \nTotal tokens for fine-tuning:   6x10^9\n\nPre-training FLOPS estimated to be used on SIII: 6 x 235 x 10^6 x 2.38x10^12  = 3.355 x 10^21\n\nFine-tuning  FLOPS estimated to be used on SIII: 6 x 235 x 10^6 x  6 x 10^9  = 8.64 x 10^18\n\nTotal FLOPS after pretraining and fine-tuning = 3.335 x 10^21 + 8.64 x 10^18 = 3.3436 x 10^21\n\n\n3.3436 x 10^21is orders of magnitude less than 10^27 therefore below threshold. "
         },
         {
           "name": "Sample Inspection",
@@ -1087,15 +1087,15 @@
         {
           "name": "Project & Usage Alignment",
           "score": 1,
-          "notes": "UMA (Universal Models for Atoms) is a family of large equivariant interatomic-potential models that predicts DFT-like energies/forces (and related properties) for atomistic structures across molecules, materials, and catalysts, aiming for strong zero-shot generalization. \nIn the proposal, UMA is used as a state-of-the-art MLIP/backbone reference point and as a target architecture to which the project will apply self-supervised generative pretraining (AR/flow-matching/diffusion) and compare against supervised pretraining at scale. "
+          "notes": "UMA (Universal Models for Atoms) is a family of large equivariant interatomic-potential models that predicts DFT-like energies/forces (and related properties) for atomistic structures across molecules, materials, and catalysts, aiming for strong zero-shot generalization. \nIn the proposal, UMA is used as a state-of-the-art MLIP/backbone reference point and as a target architecture to which the project will apply self-supervised generative pretraining (AR/flow-matching/diffusion) and compare against supervised pretraining at scale. \n\nAligns with the approved research topic of Data Science and engineering."
         },
         {
           "name": "Prohibited Use Screening (LC 2.7)",
           "score": 1,
-          "notes": "No matches found for sensitive/prohibited keywords such as \u201cmilitary\u201d, \u201cweapons\u201d, \u201cnuclear\u201d, \u201cdefense\u201d, \u201csurveillance\u201d."
+          "notes": "No mention of sensitive terms in the documentation classified in Prohibited Use Screening in accordance with LC 2.7."
         },
         {
-          "name": "Source / Provenance & Restricted Entities (LC 2.5)",
+          "name": "Source / Provenance & D5+M Affiliation Screening (LC 2.5)",
           "score": 1,
           "notes": "UMA is authored and released by FAIR at Meta with collaborators from Carnegie Mellon University (CMU), and the official usage/docs are hosted under the FAIRChem ecosystem.\n\nHF Model: https://huggingface.co/facebook/UMA \nDownloads are not tracked for this model\n\nLinkedIn (found):\nBrandon M. Wood (Meta FAIR)\nMisko Dzamba (Meta) - https://www.linkedin.com/in/misko-dzamba-508091a7 - USA\nAnuroop Sriram (Meta FAIR) - https://www.linkedin.com/in/anuroopsriram/ - USA\n\nNon-D5"
         },
@@ -1117,7 +1117,7 @@
         {
           "name": "FLOPS Calculation",
           "score": 1,
-          "notes": "The paper reports multiple UMA sizes, including UMA-S ~150M total params, UMA-M ~1.4B total params (~50M \u201cactive\u201d per structure via MoLE), and UMA-L ~700M params. This is safe to assume the FLOPs are below threshold"
+          "notes": "The paper reports multiple UMA sizes, including UMA-S ~150M total params, UMA-M ~1.4B total params (~50M \u201cactive\u201d per structure via MoLE), and UMA-L ~700M params.\nConsidering 1.4B as trainable parameters.\n\nPretraining dataset tokens estimate is : 89 x 10^9 + 1.8 x 10^12 ~ 1.889 x 10^12\nTherefore pre-trained model will have:\n \n6 x 153 x 10^6 x 1.889 x 10^12 = 1.734 x 10^21\n\nIf the applicants, as they suggest, decide to train this model from the scratch using the pre-training dataset indicated:\n\nODAC23: 657 x 10^9\nODAC25: 1.2  x 10^12\nOC20      :  89  x 10^9\nOMol      :  384 x 10^9\nOMat25 :    50  x 10^9\n\nand for fine-tuning \nMatBench: 400 x 10^6\nin-house: 5.6 x 10^9\n\nTotal tokens for pre-training: 2.38x10^12 \nTotal tokens for fine-tuning:   6x10^9\n\nPre-training FLOPS estimated to be used on SIII: 6 x 1.4 x 10^9 x 2.38x10^12  = 1.9992 x 10^22\n\nFine-tuning  FLOPS estimated to be used on SIII: 6 x 1.4 x 10^9  x  6 x 10^9  = 50.4 x 10^18\n\nTotal FLOPS after pretraining and fine-tuning = 1.9992 x 10^22 + 50.4 x 10^18 = 2.00424 x 10^22\n\n\n 2.00424 x 10^22 is orders of magnitude less than 10^27 therefore below threshold. "
         },
         {
           "name": "Sample Inspection",
@@ -1132,7 +1132,7 @@
   "recommendation": "Recommended for the grand challenge.",
   "_submission_history": [
     {
-      "timestamp": "2026-01-20T22:46:11.185196",
+      "timestamp": "2026-01-20T23:03:24.175681",
       "action": "resubmission"
     }
   ]

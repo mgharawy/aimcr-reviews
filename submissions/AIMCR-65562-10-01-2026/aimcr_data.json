@@ -1041,44 +1041,91 @@
         {
           "name": "Project & Usage Alignment",
           "score": 1,
-          "notes": "A GNN to predict molecular energies and atomic forces from 3D molecular structures. Will be used by the project for self-supervised learning techniques to build a large-scale foundation model. Aligns with approved research topics Material Sciences and Datascience & engineering"
+          "notes": "JMP (Joint Multi-domain Pre-training) is a supervised pre-training strategy for atomistic/chemical ML that learns transferable representations for atomic property prediction by multi-task training across multiple chemistry/materials datasets. In the proposal, JMP/UMA is referenced as prior supervised foundation-model work and is used mainly as a baseline/point of comparison for the proposal\u2019s objective of rigorously comparing supervised vs self-supervised pretraining for materials foundation models. "
         },
         {
           "name": "Prohibited Use Screening (LC 2.7)",
           "score": 2,
-          "notes": "The following was found in the paper of GemNet. \n\n\"Societal impacts. Accelerating molecular simulations can have positive effects in a wide range of applications in physics and chemistry. At the same time, however, this can be used for malicious purposes such as developing chemical agents or weapons. To the best of our knowledge, this work does not promote these use cases more than regular chemistry research does. To somewhat mitigate negative effects we will publish our source code under the Hippocratic license.\"\n\nCoupled with scientific review this risk will be mitigated."
+          "notes": "No occurrences were found for the following terms (case-insensitive / substring match): military, weapons, nuclear, defense, surveillance, intelligence. "
         },
         {
-          "name": "Source / Provenance & D5+M Affiliation Screening  (LC 2.5)",
+          "name": "Source / Provenance & Restricted Entities (LC 2.5)",
           "score": 1,
-          "notes": "https://github.com/TUM-DAML/gemnet_tf\n\nAuthors from TUM-DAML Germany. \n\nThe entity is from non-D5 country."
+          "notes": "https://github.com/facebookresearch/JMP/tree/main/src/jmp\nMeta Research - located in California, USA.\nThe entity is from non-D5 country."
         },
         {
           "name": "License / Permissions",
           "score": 1,
-          "notes": "Hippocratic License v2.0\n\nPermissions:\n\nUse the Software\n\nCopy the Software\n\nModify the Software\n\nMerge the Software\n\nPublish the Software\n\nDistribute the Software\n\nSublicense the Software\n\nSell copies of the Software\n\nFurnish the Software to other persons and allow them to exercise the above rights\n\nRestrictions:\n\nInclude the original copyright notice and this License (or any later version from https://firstdonoharm.dev/) in all copies or substantial portions.\n\nDo not use the Software in any way that violates applicable human rights laws (civil, labor, privacy, political, environmental, security, economic, due process, etc.).\n\nWhen multiple jurisdictions\u2019 human rights laws apply, comply with the most protective standard.\n\nIf notified of an alleged human rights principles violation, you have 90 days to investigate/respond.\n\nAfter termination notice (following the above), you have an additional 90 days to cease all use of the Software.\n\nIndemnify and hold the licensor harmless against all losses, damages, claims, costs, and legal fees resulting from your breach of this License or human rights laws/principles.\n\n"
+          "notes": "The repository is reported as Creative Commons Attribution\u2013NonCommercial 4.0 (CC BY-NC 4.0).\n\nPermits sharing (copy/redistribute) with attribution.\n\nPermits adaptation (remix/transform/build upon) with attribution.\n\nRestricts commercial use (non-commercial only)"
         },
         {
           "name": "Training Data Documentation",
           "score": 1,
-          "notes": "QM9 (small organic molecules, ~130k samples, quantum chemical properties)\n\nMD17 (molecular dynamics trajectories for small molecules)\n\nCOLL (collision datasets)\n\nAlso used QM7-x for molecular dynamics robustness tests\n\nSome variants were jointly trained or fine-tuned on OC20 + OC22 (OC22 = Open Catalyst 2022, focused on oxides)"
+          "notes": "Pre-training Datasets:\n    - OC20 and OC22\n    - ANI-1x\n    - Transition-1x\nFine-tuning Datasets:\n- QM9\n- rMD17\n-  MatBench\n- QMOF\n- SPICE\n- MD22\n"
         },
         {
           "name": "Customisation / Fine-tuning",
           "score": 1,
-          "notes": "No customization or fine tuning done of the foundation model."
+          "notes": "The paper/repo describe fine-tuning/evaluation across benchmarks including QM9, rMD17, MatBench, QMOF, SPICE, and MD22 (spanning small molecules, large molecules, and materials)."
         },
         {
           "name": "FLOPS Calculation",
           "score": 1,
-          "notes": "Parameters:\nTypical range: ~5M \u2192 40M parameters\n\nTokens: \nOf the order of 100K. \n\nNo FLOPs calculation done because this is well below the threshold. "
+          "notes": "The JMP work reports scaling up to a model with ~235M trainable parameters (parameter count depends on the specific checkpoint/config). This range of trainable parameters is safe to assume it will be below the FLOPs threshold."
         },
         {
           "name": "Sample Inspection",
           "score": 1,
           "notes": "Low risk. Skipping inspection."
         }
-      ]
+      ],
+      "is_proprietary": false
+    },
+    {
+      "name": "UMA",
+      "checks": [
+        {
+          "name": "Project & Usage Alignment",
+          "score": 1,
+          "notes": "UMA (Universal Models for Atoms) is a family of large equivariant interatomic-potential models that predicts DFT-like energies/forces (and related properties) for atomistic structures across molecules, materials, and catalysts, aiming for strong zero-shot generalization. \nIn the proposal, UMA is used as a state-of-the-art MLIP/backbone reference point and as a target architecture to which the project will apply self-supervised generative pretraining (AR/flow-matching/diffusion) and compare against supervised pretraining at scale. "
+        },
+        {
+          "name": "Prohibited Use Screening (LC 2.7)",
+          "score": 1,
+          "notes": "No matches found for sensitive/prohibited keywords such as \u201cmilitary\u201d, \u201cweapons\u201d, \u201cnuclear\u201d, \u201cdefense\u201d, \u201csurveillance\u201d."
+        },
+        {
+          "name": "Source / Provenance & Restricted Entities (LC 2.5)",
+          "score": 1,
+          "notes": "UMA is authored and released by FAIR at Meta with collaborators from Carnegie Mellon University (CMU), and the official usage/docs are hosted under the FAIRChem ecosystem.\n\nHF Model: https://huggingface.co/facebook/UMA \nDownloads are not tracked for this model\n\nLinkedIn (found):\nBrandon M. Wood (Meta FAIR)\nMisko Dzamba (Meta) - https://www.linkedin.com/in/misko-dzamba-508091a7 - USA\nAnuroop Sriram (Meta FAIR) - https://www.linkedin.com/in/anuroopsriram/ - USA\n\nNon-D5"
+        },
+        {
+          "name": "License / Permissions",
+          "score": 1,
+          "notes": "Models are made accessible for commerical and non-commerical use under a permissive license found in https://huggingface.co/facebook/UMA/blob/main/LICENSE"
+        },
+        {
+          "name": "Training Data Documentation",
+          "score": 1,
+          "notes": "UMA models are trained on ~0.5 billion unique 3D atomic structures, compiled across multiple chemistry domains (molecules/materials/catalysts) and multiple datasets/DFT settings . The Open Molecules 2025 (OMol25) and Open\nMaterials 2024 (OMat24). . In combination, these datasets contain close to 500 million training examples with over 30 billion atoms"
+        },
+        {
+          "name": "Customisation / Fine-tuning",
+          "score": 1,
+          "notes": "UMA is evaluated across many domains and, where needed for consistent DFT settings on specific public benchmarks, the paper describes fine-tuning for materials evaluations (e.g., using MPTrj and sAlex)."
+        },
+        {
+          "name": "FLOPS Calculation",
+          "score": 1,
+          "notes": "The paper reports multiple UMA sizes, including UMA-S ~150M total params, UMA-M ~1.4B total params (~50M \u201cactive\u201d per structure via MoLE), and UMA-L ~700M params. This is safe to assume the FLOPs are below threshold"
+        },
+        {
+          "name": "Sample Inspection",
+          "score": 1,
+          "notes": "Inspection skipped."
+        }
+      ],
+      "is_proprietary": false
     }
   ],
   "observations": "In Open Catalyst dataset, a scientific review is needed to mitigate the risk of dual use.\nIn Open Materials dataset,  a scientific review is needed to mitigate the risk of dual use.\nIn Open Molecules 2025  dataset, the artifact is new and less used.\n\nIn GemNet model, a scientific review is needed to mitigate the risk of dual use.\n",

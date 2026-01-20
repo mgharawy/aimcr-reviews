@@ -5,7 +5,7 @@
     "proposal_date": "2025-12-09",
     "reviewer_name": "Mohsin Ahmed Shaikh",
     "reviewer_id": "174988",
-    "aimcr_date": "2026-01-14",
+    "aimcr_date": "2026-01-20",
     "project_id": "65567"
   },
   "third_party_software": [
@@ -153,53 +153,207 @@
   "source_code": [],
   "datasets_user_files": [
     {
-      "name": "MultiWeave v1",
+      "name": "mmlu_pro",
       "checks": [
         {
           "name": "Project & Usage Alignment",
           "score": 1,
-          "notes": "A collection of textual tasks and scenarios (e.g., question\u2013answer datasets, case\u2010like vignettes, and synthetic evaluation prompts) used to probe multi\u2010model orchestration. \n\nIncludes both generic reasoning tasks and domain\u2010focused benchmarks, depending on the final MultiWeave scope.\n\nAligns with approved research topic of Datascience & engineering "
+          "notes": "A benchmark for large language models' capabilities in multi-task language understanding. Aligns with the approved research topic Datascience and engineering"
         },
         {
           "name": "Prohibited Use Screening (LC 2.7)",
-          "score": 5,
-          "notes": "Can't assess as no access to dataset provided. No URL"
+          "score": 1,
+          "notes": "No mention of sensitive terms in the documentation"
         },
         {
-          "name": "D5+M Affiliation Screening (LC 2.5)",
+          "name": "Restricted Entities Screening (LC 2.5)",
           "score": 1,
-          "notes": ""
+          "notes": "Owner: Wenhu Chen (TIGER-Lab, University of Waterloo) (https://www.linkedin.com/in/wenhu-chen-ab59317b), From a Non-D5 country."
         },
         {
           "name": "Prompts / Fine-tuning Scripts",
           "score": 1,
-          "notes": ""
+          "notes": "No finetuning scripts provided."
         },
         {
           "name": "Sample Inspection",
           "score": 1,
-          "notes": ""
+          "notes": "This dataset contains 12K complex questions and answers across various disciplines. Low risk."
         },
         {
           "name": "Provenance",
           "score": 1,
-          "notes": ""
+          "notes": "Primary Distribution Platform: Hugging Face Datasets (https://huggingface.co/datasets/TIGER-Lab/MMLU-Pro)"
         },
         {
           "name": "License / Permissions",
           "score": 1,
-          "notes": ""
+          "notes": "License: MIT License\nUse freely for any purpose including academic research, commercial applications, model evaluation, and educational purposes\nCite MMLU-Pro paper in publications using arXiv: 2406.01574 or NeurIPS 2024 proceedings\nShare, modify, and distribute the dataset\nUse for language model benchmarking, evaluation, training validation, and comparative studies\nCreate derivative works and modified versions\nRestrictions:\n\nMust include copyright notice and permission notice in all copies or substantial portions\nDataset provided \"as is\" without warranty of any kind"
+        }
+      ]
+    },
+    {
+      "name": "medqa",
+      "checks": [
+        {
+          "name": "Project & Usage Alignment",
+          "score": 1,
+          "notes": "A benchmark for large language models' capabilities in multi-task language understanding. Aligns with the approved research topic Datascience and engineering"
+        },
+        {
+          "name": "Prohibited Use Screening (LC 2.7)",
+          "score": 1,
+          "notes": "No mention of sensitive terms in the documentation"
+        },
+        {
+          "name": "Restricted Entities Screening (LC 2.5)",
+          "score": 1,
+          "notes": "Owner: Di Jin (MIT) (https://www.linkedin.com/in/jindi11/en) From a Non-D5 country"
+        },
+        {
+          "name": "Prompts / Fine-tuning Scripts",
+          "score": 1,
+          "notes": "No finetuning scripts provided."
+        },
+        {
+          "name": "Sample Inspection",
+          "score": 1,
+          "notes": "This dataset contains multiple-choice OpenQA for solving medical problems, low risk."
+        },
+        {
+          "name": "Provenance",
+          "score": 1,
+          "notes": "Primary Distribution Platform: Hugging Face Datasets (https://huggingface.co/datasets/bigbio/med_qa)"
+        },
+        {
+          "name": "License / Permissions",
+          "score": 1,
+          "notes": "License: MIT License\nUse freely for any purpose including academic research, commercial applications, model evaluation, and educational purposes\nCite MMLU-Pro paper in publications using arXiv: 2406.01574 or NeurIPS 2024 proceedings\nShare, modify, and distribute the dataset\nUse for language model benchmarking, evaluation, training validation, and comparative studies\nCreate derivative works and modified versions\nRestrictions:\n\nMust include copyright notice and permission notice in all copies or substantial portions\nDataset provided \"as is\" without warranty of any kind"
+        }
+      ]
+    },
+    {
+      "name": "medmcqa",
+      "checks": [
+        {
+          "name": "Project & Usage Alignment",
+          "score": 1,
+          "notes": "MedMCQA is a large-scale, Multiple-Choice Question Answering (MCQA) dataset designed to address real-world medical entrance exam questions.. Aligns with the approved research topic Datascience and engineering"
+        },
+        {
+          "name": "Prohibited Use Screening (LC 2.7)",
+          "score": 1,
+          "notes": "No mention of sensitive terms in the documentation"
+        },
+        {
+          "name": "Restricted Entities Screening (LC 2.5)",
+          "score": 1,
+          "notes": "Owner: Ankit Pal (Saama AI Research) (https://www.linkedin.com/in/aadityaura/)  From a Non-D5 country."
+        },
+        {
+          "name": "Prompts / Fine-tuning Scripts",
+          "score": 1,
+          "notes": "No finetuning scripts provided."
+        },
+        {
+          "name": "Sample Inspection",
+          "score": 1,
+          "notes": "Dataset contains Multiple-Choice Question designed to address real-world medical entrance exam questions. Low risk.\n\nMedMCQA has more than 194k high-quality AIIMS & NEET PG entrance exam MCQs covering 2.4k healthcare topics and 21 medical subjects are collected with an average token length of 12.77 and high topical diversity."
+        },
+        {
+          "name": "Provenance",
+          "score": 1,
+          "notes": "Primary Distribution Platform: Hugging Face Datasets (https://huggingface.co/datasets/openlifescienceai/medmcqa)"
+        },
+        {
+          "name": "License / Permissions",
+          "score": 1,
+          "notes": "License: Apache 2.0\nUse freely for any purpose including academic research, commercial applications, and educational purposes\nCite MedMCQA paper in publications using conference proceedings or arXiv reference\nShare, modify, and distribute the dataset\nUse for medical question answering model development, language model evaluation, and clinical reasoning research\nCreate derivative works and modified versions\nRestrictions:\n\nMust include copyright notice and license text in all copies or substantial portions\nMust state changes made to the original dataset if modified\nMust provide attribution to original authors (Ankit Pal, Logesh Kumar Umapathi, Malaikannan Sankarasubbu)\nDataset provided \"as is\" without warranty of any kind"
+        }
+      ]
+    },
+    {
+      "name": "medqa_usml",
+      "checks": [
+        {
+          "name": "Project & Usage Alignment",
+          "score": 1,
+          "notes": "Large-scale real-world medical questions benchmark for Large Language Models. Aligns with the approved research topic Datascience and engineering"
+        },
+        {
+          "name": "Prohibited Use Screening (LC 2.7)",
+          "score": 1,
+          "notes": "No mention of sensitive terms in the documentation"
+        },
+        {
+          "name": "Restricted Entities Screening (LC 2.5)",
+          "score": 1,
+          "notes": "Owner: Shuyue Jia (Boston University) (https://www.linkedin.com/in/bruceshuyuejia) From a Non-D5 country."
+        },
+        {
+          "name": "Prompts / Fine-tuning Scripts",
+          "score": 1,
+          "notes": "No finetuning scripts provided."
+        },
+        {
+          "name": "Sample Inspection",
+          "score": 1,
+          "notes": "Dataset contains Medical questions / answers. Low risk."
+        },
+        {
+          "name": "Provenance",
+          "score": 1,
+          "notes": "Primary Distribution Platform: Hugging Face Datasets (https://huggingface.co/datasets/shuyuej/MedQA-USMLE-Benchmark)"
+        },
+        {
+          "name": "License / Permissions",
+          "score": 1,
+          "notes": "License: Apache 2.0\nUse freely for any purpose, including academic research, commercial use, and internal or external deployments\nShare, copy, modify, and distribute the work in source or object form\nCreate derivative works and release them under your own license terms\nUse in software, datasets, models, benchmarks, and downstream products\nReceive a royalty-free patent license from contributors for necessary patent claims\n\nRestrictions:\nMust include the Apache 2.0 license text with all redistributions\nMust clearly state any changes made to the original work when modified\nMust retain existing copyright, patent, and attribution notices\nMust preserve and reproduce the NOTICE file contents if provided\nNo trademark rights are granted (names/logos stay off-limits)\nPatent license terminates if you initiate patent litigation related to the work\nWork is provided \u201cas is\u201d, without warranties or liability"
+        }
+      ]
+    },
+    {
+      "name": "mmlu",
+      "checks": [
+        {
+          "name": "Project & Usage Alignment",
+          "score": 1,
+          "notes": "This is a massive multitask test consisting of multiple-choice questions from various branches of knowledge. The test spans subjects in the humanities, social sciences, hard sciences, and other areasas a benchmark for Large Language Models. Aligns with the approved research topic Datascience and engineering"
+        },
+        {
+          "name": "Prohibited Use Screening (LC 2.7)",
+          "score": 1,
+          "notes": "No mention of sensitive terms in the documentation"
+        },
+        {
+          "name": "Restricted Entities Screening (LC 2.5)",
+          "score": 1,
+          "notes": "Owner: Center for AI Safety (CAIS) (https://www.linkedin.com/company/center-for-ai-safety?utm_source=chatgpt.com) is a nonprofit organization based in San Francisco, California that conducts research and advocacy to reduce risks associated with artificial intelligence. It was founded by Dan Hendrycks (https://www.linkedin.com/in/dan-hendrycks-04062395)  , Entity is From a Non-D5 country."
+        },
+        {
+          "name": "Prompts / Fine-tuning Scripts",
+          "score": 1,
+          "notes": "No finetuning scripts provided."
+        },
+        {
+          "name": "Sample Inspection",
+          "score": 1,
+          "notes": "Dataset contains Multiple choice questions from various fields of knowledge / answers. Low risk."
+        },
+        {
+          "name": "Provenance",
+          "score": 1,
+          "notes": "Primary Distribution Platform: Hugging Face Datasets (https://huggingface.co/datasets/cais/mmlu)"
+        },
+        {
+          "name": "License / Permissions",
+          "score": 1,
+          "notes": "License: MIT License\nUse freely for any purpose, including academic research, commercial products, and private or internal use\nCopy, modify, merge, publish, distribute, sublicense, and sell the software\nCreate derivative works and integrate into proprietary or open-source projects\nUse in software, datasets, models, tools, and downstream applications\n\nRestrictions:\nMust include the copyright notice and MIT license text in all copies or substantial portions\nSoftware is provided \u201cas is\u201d, without warranties of any kind\nAuthors and copyright holders are not liable for any damages or claims"
         }
       ]
     }
   ],
   "models": [],
-  "observations": "No Dataset URL or access provided, therefore cannot be assessed.\nNo indication of the model used. Cannot be assessed.",
-  "recommendation": "More information has been requested from the applicant.",
-  "_submission_history": [
-    {
-      "timestamp": "2026-01-14T17:50:48.243602",
-      "action": "initial_submission"
-    }
-  ]
+  "observations": "Model is developed internally in KAUST.",
+  "recommendation": "Recommended for Grand Challenge."
 }

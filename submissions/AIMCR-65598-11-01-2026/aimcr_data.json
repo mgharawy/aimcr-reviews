@@ -178,7 +178,7 @@
           "notes": "No mention of sensitive terms in the documentation."
         },
         {
-          "name": "Source / Provenance & D5+M Affiliation Screening  (LC 2.5)",
+          "name": "Source / Provenance & D5+M Affiliation Screening (LC 2.5)",
           "score": 1,
           "notes": "https://github.com/NanboLi/FACTS\n\nOwnership and maintenance\n\nPrimary maintainer: Li Nanbo\nAffiliation: Postdoctoral Fellow at KAUST Center of Excellence for Generative AI, working with Prof. J\u00fcrgen Schmidhuber\nPrevious affiliation: PhD from University of Edinburgh under Prof. Robert Fisher and Prof. Chris Williams\nLinkedIn: https://www.linkedin.com/in/li-nanbo-424131135\nContact email: linanbo2008@gmail.com\n\nThe individual is affiliated with an entity from non-D5 country.\n"
         },
@@ -190,7 +190,7 @@
         {
           "name": "Training Data Documentation",
           "score": 1,
-          "notes": "The FACTS model was evaluated (not pretrained in the traditional sense) on benchmark datasets rather than large-scale pretraining corpora; specific evaluation datasets include ETT (Electricity Transformer Temperature) datasets with approximately 70,080 data points each, and object-centric video datasets like CLEVR-based benchmarks, though exact token/sample counts for all benchmarks are not specified in the repository."
+          "notes": "Small-scale proof-of-concept pretraining on the MOVi dataset (https://cove.thecvf.com/datasets/848), in total 50000 samples (256x256 images)"
         },
         {
           "name": "Customisation / Fine-tuning",
@@ -199,15 +199,16 @@
         },
         {
           "name": "FLOPS Calculation",
-          "score": 2,
-          "notes": "No indication of the number of parameters. "
+          "score": 1,
+          "notes": "According to additional information provided by the PI:\n\napproximately 3B parameters = 24 layers, 150 M parameters per layer.\n24 * 150 M = 3600 M or 3.6B\n\nPretrained FLOPs:\n6 x 3.6B x 50000 = 1.080 x 10^15 \n\nTraining on Shaheen III GPUP:\n6x3.6Bx(10^12 + 627x10^9) = 5.5857x10^21 FLOPS expected after proposed compute in the project."
         },
         {
           "name": "Sample Inspection",
           "score": 1,
           "notes": "low risk. skipping inspection."
         }
-      ]
+      ],
+      "is_proprietary": false
     },
     {
       "name": "MOSA",
@@ -223,7 +224,7 @@
           "notes": "No mention of sensitive terms in the documentation."
         },
         {
-          "name": "Source / Provenance & D5+M Affiliation Screening  (LC 2.5)",
+          "name": "Source / Provenance & D5+M Affiliation Screening (LC 2.5)",
           "score": 1,
           "notes": "https://github.com/piotrpiekos/MoSA)\n\n\nThe model is owned and maintained by Piotr Pi\u0119kos, a 4th-year PhD Candidate at KAUST AI Initiative supervised by Prof. J\u00fcrgen Schmidhuber, with co-authors R\u00f3bert Csord\u00e1s (Stanford) and J\u00fcrgen Schmidhuber (KAUST/IDSIA). LinkedIn: https://www.linkedin.com/in/piotrpiekos1/\n\nThe developer is affiliated to an entity in non-D5 country."
         },
@@ -235,7 +236,7 @@
         {
           "name": "Training Data Documentation",
           "score": 1,
-          "notes": "The paper evaluates MoSA on language modeling tasks but does not release pretrained model weights"
+          "notes": "C4, 6.5B tokens used for pretraining. (according to additional information provided by the PI)"
         },
         {
           "name": "Customisation / Fine-tuning",
@@ -245,21 +246,22 @@
         {
           "name": "FLOPS Calculation",
           "score": 1,
-          "notes": "The paper experiments use four model sizes: Tiny (28M), Small (113M), Medium (210M), and Large (516M) parameters for dense baselines, with MoSA variants having comparable parameter counts while achieving better perplexity within the same compute budget\u2014the repository provides the attention layer implementation without fixed parameter counts as it depends on user configuration.\n\nGiven the size of the models and the number of tokens involved, the model is well below the 10^27 threshold."
+          "notes": "\nAccording to additional information provided by the PI:\napproximately 1.2B parameters pre-trained model. On Shaheen III GPUP it will be modified to 40B. \n\nPre-training tokens = 6.5 x 10^9\n\nPre-training FLOPs= 6 x 1.2x10^9 x 6.5x10^9 = 46.8 x 10^18\n\nOn Shaheen III GPUP training plan;\nTarget model parameters = 40B\nTarget tokens = 100B\nEstimated additional FlOPS on Shaheen III GPUP: \n6x 40 x 10^9 x 100 x 10^9 = 2.4 x 10^22\n\nTotal FLOPS =  2.4 x 10^22 + 4.68 x 10^19 = 2.4 x 10^22\n\nbelow threshold of 10^27"
         },
         {
           "name": "Sample Inspection",
           "score": 1,
           "notes": "low risk. Skipping sample inspection."
         }
-      ]
+      ],
+      "is_proprietary": false
     }
   ],
-  "observations": "For FACTS model, the number of parameters was not discovered from the documentation or proposal. However, the proposal sets the expectation that it wants to scale the model to 1B and 3B, which means the original is smaller than that. Given the dataset size and the observations of\n\nAuthor(s) plan to develop, scale, and train their own AI/LLM architectures from scratch.",
+  "observations": "Models are well below threshold.\nDatasets and software are safe with no risk.",
   "recommendation": "Recommended for grand challenge. ",
   "_submission_history": [
     {
-      "timestamp": "2026-01-11T21:52:33.654403",
+      "timestamp": "2026-01-20T19:26:48.411365",
       "action": "resubmission"
     }
   ]

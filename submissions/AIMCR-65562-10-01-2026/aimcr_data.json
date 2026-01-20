@@ -753,15 +753,15 @@
         {
           "name": "Project & Usage Alignment",
           "score": 1,
-          "notes": "Matbench would be used for downstream finetuning evaluation. Aligns with the approved research topic Datascience and engineering"
+          "notes": "Matbench would be used for downstream fine-tuning evaluation. Aligns with the approved research topic Material Science, Datascience and Engineering."
         },
         {
           "name": "Prohibited Use Screening (LC 2.7)",
           "score": 1,
-          "notes": "No mention of sensitive terms in the documentation"
+          "notes": "No mention of sensitive terms in the documentation classified in Prohibited Use Screening in accordance with LC 2.7"
         },
         {
-          "name": "D5+M Affiliation Screening (LC 2.5)",
+          "name": "D5+M affiliation Screening (LC 2.5)",
           "score": 1,
           "notes": "Developed by Lawrence Berkeley National Laboratory/DOE , USA\nIt is a entity in non-D5 country."
         },
@@ -833,15 +833,15 @@
         {
           "name": "Project & Usage Alignment",
           "score": 1,
-          "notes": "Pretraining data source for self-supervised learning experiments and a benchmark for downstream evaluation of adsorption-related property predictions (CO2 capture applications). Aligns with Material sciences, and Datascience & engineering"
+          "notes": "Pretraining data source for self-supervised learning experiments and a benchmark for downstream evaluation of adsorption-related property predictions (CO2 capture applications). The applicants are interested in versions 23 and 25, both are already available in /ibex/project/c2261/datasets/odac and /ibex/project/c2261/datasets/odac25 on Ibex. Visual inspection is for these directories is pending access permissions.\n\nAligns with Material sciences, and Datascience & engineering."
         },
         {
           "name": "Prohibited Use Screening (LC 2.7)",
           "score": 1,
-          "notes": "No mention of sensitive terms in the documentation."
+          "notes": "No mention of sensitive terms in the documentation classified in Prohibited Use Screening in accordance with LC 2.7"
         },
         {
-          "name": "D5+M Affiliation Screening (LC 2.5)",
+          "name": "D5+M affiliation Screening (LC 2.5)",
           "score": 1,
           "notes": "Managed by MetaAI. \nIt is an entity from non-D5 country."
         },
@@ -881,7 +881,7 @@
           "notes": "The OMat24 dataset includes uranium, plutonium, thorium, neptunium, and other actinides in its elemental coverage. \nRaising the risk level to Low to keep in sight."
         },
         {
-          "name": "D5+M Affiliation Screening (LC 2.5)",
+          "name": "D5+M affiliation Screening (LC 2.5)",
           "score": 1,
           "notes": "Curated and managed by Meta \nThis is an entity in non-D5 country."
         },
@@ -898,7 +898,7 @@
         {
           "name": "Provenance",
           "score": 1,
-          "notes": "HuggingFace downloads: 17\n62 likes.\nArtifact of a paper: https://huggingface.co/papers/2410.12771\nMaintained by Meta"
+          "notes": " https://huggingface.co/papers/2410.12771\n\nHuggingFace downloads: 17\n62 likes.\nArtifact of a paper: https://huggingface.co/papers/2410.12771\nMaintained by Meta"
         },
         {
           "name": "License / Permissions",
@@ -946,6 +946,46 @@
           "notes": "FAIR Chemistry License v1 ( a custom license by Meta).\nPermissions:\n\nUse - Use the Materials (models, code, weights, documentation)\n\nReproduce - Copy the Materials\n\nDistribute - Share the Materials with third parties\n\nModify - Make modifications to the Materials\n\nCreate Derivative Works - Build upon the Materials\n\nCommercial Use - License is royalty-free (no payment required)\n\nWorldwide - License applies globally\n\nOwn Derivatives - You own derivative works and modifications you create\n\nPublish Research - Can publish research results using the Materials\n\nRestrictions:\n\nNon-Transferable - License cannot be transferred to others\n\nAcceptable Use Policy Compliance - Must follow prohibited use restrictions (military, nuclear, weapons, ITAR, espionage, etc.)\n\nGeographic Restrictions - Not available in comprehensively sanctioned jurisdictions, China, Russia, and Belarus\n\nTermination on Litigation - License terminates if you sue Meta over the Materials\n\nIndemnification - Must hold Meta harmless from third-party claims arising from your use"
         }
       ]
+    },
+    {
+      "name": "In-house dataset",
+      "checks": [
+        {
+          "name": "Project & Usage Alignment",
+          "score": 1,
+          "notes": "This dataset is composed of adsorption data for the CO2, N2, and H2O in the form of Metal-Organic Frameworks (MOFs) and Covalent Organic Frameworks (COFs) databases\nThe dataset will be used for fine-tuning. \n\nAligns with the approved research topic, Material Science. \n"
+        },
+        {
+          "name": "Prohibited Use Screening (LC 2.7)",
+          "score": 1,
+          "notes": "No mention of sensitive terms in the documentation (README.md) classified in Prohibited Use Screening in accordance with LC 2.7."
+        },
+        {
+          "name": "D5+M affiliation Screening (LC 2.5)",
+          "score": 1,
+          "notes": "This is developed by the applicant's research group."
+        },
+        {
+          "name": "Prompts / Fine-tuning Scripts",
+          "score": 1,
+          "notes": "No prompts or fine tuning scripts provided."
+        },
+        {
+          "name": "Sample Inspection",
+          "score": 1,
+          "notes": "Visual inspection of the files show a total of 5 databases MoF and CoF.\n\nCOF-DB-1.0  COF-DB-2.0  MOF-DB-1.1  MOF-DB-2.0  MOF-DB-2.1\n\nThe raw, unprocessed form is composed of CSV files for geometry, adsorption, and chemical composition. \n\nThe processed form to be used as input to fine tune the models is in LMDB database format, which has been processed for training a GNN into nodes and leaves dataset."
+        },
+        {
+          "name": "Provenance",
+          "score": 1,
+          "notes": "It is available in the applicant's project directory /ibex/project/c2261/datasets/all-adsorption on Ibex cluster. \n\nThis is developed by the applicant's research group."
+        },
+        {
+          "name": "License / Permissions",
+          "score": 1,
+          "notes": "No license. This is developed by the applicant's research group."
+        }
+      ]
     }
   ],
   "models": [
@@ -960,10 +1000,10 @@
         {
           "name": "Prohibited Use Screening (LC 2.7)",
           "score": 1,
-          "notes": "No mention of sensitive terms in the paper or in Github reporsitory."
+          "notes": "\u201cNo mention of sensitive terms in the documentation classified in Prohibited Use Screening in accordance with LC 2.7.\u201d"
         },
         {
-          "name": "Source / Provenance & D5+M Affiliation Screening  (LC 2.5)",
+          "name": "Source / Provenance & D5+M Affiliation Screening (LC 2.5)",
           "score": 1,
           "notes": "https://github.com/atomicarchitects/equiformer_v2\n\nYi-Lun Liao - Affiliation with MIT\nCommits: 17\nlast commit: 11 months ago\nStars: 316\nFork: 43\n\nhttps://huggingface.co/yilunliao/equiformer_v2\nNo model card available"
         },
@@ -975,7 +1015,7 @@
         {
           "name": "Training Data Documentation",
           "score": 1,
-          "notes": "Primary Training Datasets\n1. OC20 (Open Catalyst 2020)\n\n1,281,040 DFT relaxations (~264,890,000 single-point evaluations)\nCovers wide range of materials, surfaces, and adsorbates (nitrogen, carbon, oxygen chemistries)\nPurpose: Catalyst discovery for renewable energy applications\nSource: Meta AI / Open Catalyst Project\n\n2. OC22 (Open Catalyst 2022)\n\nExtension focusing on oxide materials\nUsed to demonstrate data efficiency vs. GemNet-OC\nSource: Meta AI / Open Catalyst Project\n\nComparison/Ablation Dataset\n3. QM9\n\nUsed for comparison with original Equiformer\nStandard benchmark for molecular property prediction\n~134K small organic molecules with quantum chemical properties\n\n"
+          "notes": "Primary Training Datasets\n1. OC20 (Open Catalyst 2020)\n\n1,281,040 DFT relaxations (~264,890,000 single-point evaluations)\nCovers wide range of materials, surfaces, and adsorbates (nitrogen, carbon, oxygen chemistries)\nPurpose: Catalyst discovery for renewable energy applications\nSource: Meta AI / Open Catalyst Project\nEstimated JSON tokens: 1.8T\n\n\n2. OC22 (Open Catalyst 2022)\n\nExtension focusing on oxide materials\nUsed to demonstrate data efficiency vs. GemNet-OC\nSource: Meta AI / Open Catalyst Project\nComparison/Ablation Dataset\nEstimated JSON tokens: 89B\n\n3. QM9\n\nUsed for comparison with original Equiformer\nStandard benchmark for molecular property prediction\n~134K small organic molecules with quantum chemical properties\nEstimated JSON tokens: negligible"
         },
         {
           "name": "Customisation / Fine-tuning",
@@ -985,14 +1025,15 @@
         {
           "name": "FLOPS Calculation",
           "score": 1,
-          "notes": "Maximum parameters range from 10 to 100 million for different variants. Given the number of samples and the model parameters, the max FLOPs can not reach or exceed 10^27. "
+          "notes": "EquiformerV2-L (Large) has 153 x 10^6 parameters. \n\npretraining dataset tokens estimate is : 89 x 10^9 + 1.8 x 10^12 ~ 1.889 x 10^12\nTherefore pre-trained model will have:\n \n6 x 153 x 10^6 x 1.889 x 10^12 = 1.734 x 10^21\n\nIf the applicants, as they suggest, decide to train this model from the scratch using the pre-training dataset indicated:\n\nODAC23: 657 x 10^9\nODAC25: 1.2  x 10^12\nOC20      :  89  x 10^9\nOMol      :  384 x 10^9\nOMat25 :    50  x 10^9\n\nand for fine-tuning \nMatBench: 400 x 10^6\nin-house: 5.6 x 10^9\n\nTotal tokens for pre-training: 2.38x10^12 \nTotal tokens for fine-tuning:   6x10^9\n\nPre-training FLOPS estimated to be used on SIII: 6 x 153 x 10^6 x 2.38x10^12  = 2.184 x 10^21\n\nFine-tuning  FLOPS estimated to be used on SIII: 6 x 153 x 10^6 x  6 x 10^9  = 5.508 x 10^18\n\nTotal FLOPS after pretraining and fine-tuning = 2.184 x 10^21 + 5.508 x 10^18 = 2.184 x 10^21\n\n\n2.184 x 10^21 is orders of magnitude less than 10^27 therefore below threshold. "
         },
         {
           "name": "Sample Inspection",
           "score": 1,
           "notes": "low risk, no inspection conducted."
         }
-      ]
+      ],
+      "is_proprietary": false
     },
     {
       "name": "GemNet-OC",
@@ -1041,10 +1082,10 @@
     }
   ],
   "observations": "In Open Catalyst dataset, a scientific review is needed to mitigate the risk of dual use.\nIn Open Materials dataset,  a scientific review is needed to mitigate the risk of dual use.\nIn Open Molecules 2025  dataset, the artifact is new and less used.\n\nIn GemNet model, a scientific review is needed to mitigate the risk of dual use.\n",
-  "recommendation": "Recommended for grand challenge.",
+  "recommendation": "Recommended for the grand challenge.",
   "_submission_history": [
     {
-      "timestamp": "2026-01-13T09:46:32.577882",
+      "timestamp": "2026-01-20T22:46:11.185196",
       "action": "resubmission"
     }
   ]

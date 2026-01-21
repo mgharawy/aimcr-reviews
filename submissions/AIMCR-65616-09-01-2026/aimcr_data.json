@@ -363,12 +363,59 @@
       ]
     }
   ],
-  "models": [],
-  "observations": "Indication of 300B tokens to be used to train a 3B parameter model. An additional indication of the 8B model is present in the proposal for synthetic data generation. Though specific models have not been requested, the given requirements fall well below the 10^27 FLOPs threshold with the requested number of hours. \n\nSmolKalam dataset has been published on HF by a member of the group, without a license. \n",
-  "recommendation": "Recommended for grand challenge. ",
+  "models": [
+    {
+      "name": "In-house model",
+      "checks": [
+        {
+          "name": "Project & Usage Alignment",
+          "score": 1,
+          "notes": "Applicants want to train their own model from scratch on Shaheen III GPUP.\nIt is a Llama decoder with  grouped query attention.\nThe goal is to pretrain a primarily bilingual Arabic-English language model . As standard in the literature, the pretraining task is next-token prediction. \n\nAligns with approved research topic Datascience and engineering."
+        },
+        {
+          "name": "Prohibited Use Screening (LC 2.7)",
+          "score": 1,
+          "notes": "No documentation available. However, similar models have available on HuggingFace have no mention of sensitive terms in the documentation classified in Prohibited Use Screening in accordance with LC 2.7."
+        },
+        {
+          "name": "Source / Provenance & D5+M Affiliation Screening (LC 2.5)",
+          "score": 1,
+          "notes": "No URL as this code will be developed on Shaheen III GPUP."
+        },
+        {
+          "name": "License / Permissions",
+          "score": 1,
+          "notes": "No license as this is an in-house code to be developed by the applicant and the research group. "
+        },
+        {
+          "name": "Training Data Documentation",
+          "score": 1,
+          "notes": "This is not a pre-trained model. The training dataset is the same as inspected in teh Datasets sections. "
+        },
+        {
+          "name": "Customisation / Fine-tuning",
+          "score": 1,
+          "notes": "No fine tuning planned."
+        },
+        {
+          "name": "FLOPS Calculation",
+          "score": 1,
+          "notes": "The indication of number of parameters is 3B. \nThe indication of number of training tokens is 1T. \nThe estimated FLOPs on ShaheenIII GPUP to train a model from scratch is:\n\n6 x 3 x 10^9 x 1 x 10^12 = 1.8 x 10^22 FLOPS\n\nIt is less than the threshold of 10^27."
+        },
+        {
+          "name": "Sample Inspection",
+          "score": 1,
+          "notes": "No sample inspection as the code doesn't exist yet."
+        }
+      ],
+      "is_proprietary": false
+    }
+  ],
+  "observations": "The software list is minimal but the dependencies should take care of the libraries deemed necessary for the project goals.\nSmolKalam dataset has been published on HF by a member of the group, without a license. \n\nThe applicant has not provided a source for their model and claim that it will be developed on Shaheen III GPUP based on the Llama decoder with Group Query Attention (introduced in Llama 2). The risk is mitigated because all the public and custom data is generic Arabic text and the model size indicated is approximately 3B. \nEven with the large token count for training, the estimated FLOPS reached will be orders of magnitude less than the threshold. \n\nQuarterly monitoring to check the model will be sufficient to build more trust. ",
+  "recommendation": "Positive check passed.\nNegative check passed. \n10^27 check passed.\nRecommended for grand challenge. ",
   "_submission_history": [
     {
-      "timestamp": "2026-01-11T23:30:57.492089",
+      "timestamp": "2026-01-21T08:17:10.610376",
       "action": "resubmission"
     }
   ]

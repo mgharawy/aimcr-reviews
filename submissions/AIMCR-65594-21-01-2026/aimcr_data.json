@@ -171,12 +171,12 @@
       "is_proprietary": false
     }
   ],
-  "observations": "Model is to be developed on Shaheen III GPUP from scratch. \nThe model source, therefore will need to be checked at least once to confirm the conformance to the project proposal. \n\nSample check could not be carried out because of lack of source for the model.\n\n",
+  "observations": "Model is to be developed on Shaheen III GPUP from scratch. \nThe model source, therefore will need to be checked at least once to confirm the conformance to the project proposal. \n\nSample check could not be carried out because of lack of source for the model.\n\nFor software, the group has not listed transformers library. In this case, it is expected that they will use torch.nn to define the model.\n\n",
   "recommendation": "Recommended for grand challenge with a condition to monitor midway to the allocated duration approved by the RCAC.",
   "_submission_history": [
     {
-      "timestamp": "2026-01-21T21:21:16.822398",
-      "action": "initial_submission"
+      "timestamp": "2026-01-21T21:30:13.295997",
+      "action": "resubmission"
     }
   ]
 }

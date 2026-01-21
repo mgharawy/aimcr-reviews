@@ -483,11 +483,11 @@
       "is_proprietary": false
     }
   ],
-  "observations": "Additional information by the PI has indicated three datasets and 3 models. All the datasets are comming from Allen Institute for Brain Science. \n\nThe models are small and vision transformers. The number of tokens, though big, still hasn't enabled any of the requested models to accumulate anywhere near the 10^27 threshold. \n\nIn Serial multiplane sections for 3D reconstruction, there are 3rd-party material exceptions where some images/material may require separate permission if not covered by the article\u2019s CC license. This raises the license risk. To mitigate this, the PI must be notified ",
+  "observations": "Additional information by the PI has indicated three datasets and 3 models. All the datasets are comming from Allen Institute for Brain Science. \n\nThe models are small and vision transformers. The number of tokens, though big, still hasn't enabled any of the requested models to accumulate anywhere near the 10^27 threshold. ",
   "recommendation": "Positive checks passed.\nNegative checks passed. \n10^27 check passed.\n\nRecommended for grand challenge. ",
   "_submission_history": [
     {
-      "timestamp": "2026-01-22T00:30:42.323168",
+      "timestamp": "2026-01-22T00:33:22.672686",
       "action": "initial_submission"
     }
   ]

@@ -23,7 +23,7 @@
           "notes": "No indication of prohibited or restricted use (including military, weapons, surveillance, or intelligence functionality) is stated or implied in the PyTorch 2.9.0 documentation, which describes a general-purpose open-source machine learning framework; this review was conducted in accordance with LC 2.7."
         },
         {
-          "name": "D5+M Affiliation Screening (LC 2.5)",
+          "name": "Restricted Entities Screening (LC 2.5)",
           "score": 1,
           "notes": "No indication of restricted-country origin or restricted-entity involvement was identified for Torchtitan v0.2.0 based on available documentation, contributor information, and repository metadata.\\nThis review was conducted in accordance with LC 2.5."
         },
@@ -58,7 +58,7 @@
           "notes": "No indication of prohibited or restricted use (including military, weapons, surveillance, or intelligence functionality) is stated or implied in the Megatron-LM v0.15.0 documentation, which describes a research-oriented large-scale language model training framework; this review was conducted in accordance with LC 2.7."
         },
         {
-          "name": "D5+M Affiliation Screening (LC 2.5)",
+          "name": "Restricted Entities Screening (LC 2.5)",
           "score": 1,
           "notes": "No indication of restricted-country origin or restricted-entity involvement was identified for Torchtitan v0.2.0 based on available documentation, contributor information, and repository metadata. This review was conducted in accordance with LC 2.5."
         },
@@ -96,7 +96,7 @@
           "notes": "No indication of prohibited or restricted use (including military, weapons, surveillance, or intelligence functionality) is stated or implied in the FineWeb-Edu dataset documentation, which describes the dataset as an educationally focused web-text corpus for language model research and training; this review was conducted in accordance with LC 2.7."
         },
         {
-          "name": "D5+M Affiliation Screening (LC 2.5)",
+          "name": "Restricted Entities Screening (LC 2.5)",
           "score": 1,
           "notes": "Originating Organization: HuggingFace and Common Crawl both in United States\n"
         },
@@ -123,7 +123,54 @@
       ]
     }
   ],
-  "models": [],
+  "models": [
+    {
+      "name": "Looped Transformer (shared-block Llama/Qwen-style; custom research model) ",
+      "checks": [
+        {
+          "name": "Project & Usage Alignment",
+          "score": 1,
+          "notes": "Decoder-only Looped Transformer that reuses several shared Transformer blocks across multiple loop steps (recurrent depth). Trained for autoregressive language modeling to (1) establish scaling laws for loop depth/width/compute and (2) analyze the strong empirical synergy between Looped Transformers and the Muon optimizer. "
+        },
+        {
+          "name": "Prohibited Use Screening (LC 2.7)",
+          "score": 1,
+          "notes": "No documentation  provided for screening"
+        },
+        {
+          "name": "Source / Provenance & Restricted Entities (LC 2.5)",
+          "score": 1,
+          "notes": "No source provided. The model is to be produced during Shaheen III runs; planned open release (GitHub/Hugging Face) \u2014 URL TBD. \nOwners: KAUST: Di Wang (PI), Liangyu Wang. "
+        },
+        {
+          "name": "License / Permissions",
+          "score": 1,
+          "notes": "Research artifacts intended for open publication and open-source release. Training framework licensing: Megatron-LM (Apache-2.0). "
+        },
+        {
+          "name": "Training Data Documentation",
+          "score": 1,
+          "notes": "Pre-training will use the FineWeb-Edu [1] public text corpus (10 B to 350 B tokens). (HuggingFaceFW/fineweb-edu; Lozhkov et al., 2024; DOI: 10.57967/hf/2497; arXiv:2406.17557). "
+        },
+        {
+          "name": "Customisation / Fine-tuning",
+          "score": 1,
+          "notes": "Models are trained from scratch for language modeling; no downstream fine-tuning in the released artifacts (unless added in later follow-up work). "
+        },
+        {
+          "name": "FLOPS Calculation",
+          "score": 1,
+          "notes": "Effective capacity explored spans ~0.1B\u201310B (via loop depth). \n# of tokens in dataset = 350B tokens in total \nMFU = 38% to 41% \nAMP mixed precision: bf16 for forward/backward compute, FP32 master weights & optimizer updates. \n\nTotal FLOPs\u22486\u00d7Neff\u00d7T\nWhere:\n\nT=350B tokens=3.5\u00d710^11\n\n\nNeff (effective capacity explored) spans: 0.1B to 10B params\n\n\u21d2Neff\u2208[1\u00d7108,\u20091\u00d710^10]\n\nResults\n\nLow end (0.1B effective params):\n6\u22c51\u00d710^8\u22c53.5\u00d710^11=2.1\u00d710^20 FLOPs\n\nHigh end (10B effective params):\n6\u22c51\u00d710^10\u22c53.5\u00d710^11=2.1\u00d710^22 FLOPs\n\nSo the expected compute is:\nTotal FLOPs\u22482.1\u00d710^20 to 2.1\u00d710^22\n\nAchieved FLOP/s=MFU\u00d7Peak FLOP/s\n\nUsing the pessimistic MFU = 38%:\nAchieved FLOP/s\u22480.38\u00d7Peak FLOP/s\nAchieved FLOP/s=0.38\u00d7990 TFLOP/s\u2248376.2 TFLOP/s"
+        },
+        {
+          "name": "Sample Inspection",
+          "score": 1,
+          "notes": "Inspection skipped. No source."
+        }
+      ],
+      "is_proprietary": false
+    }
+  ],
   "observations": "No concrete, named pretrained models or exact model variants are specified (e.g., \u201cLLaMA-2-7B\u201d, \u201cQwen-7B\u201d, \u201cGPT-NeoX-20B\u201d).\n\nFindings\n- The document does not name any specific existing model checkpoints or fixed model sizes to be used.\n- References to \u201cLlama/Qwen style\u201d are architectural examples only, not commitments to specific models.\n- The project instead proposes training new Transformer-based and Looped Transformer models from scratch across a range of sizes and loop depths. \n",
   "recommendation": "Since the proposal is for a looped transformer, the expectation is that the number of parameters will be significantly less then any stacked transformer architecture. However, the number of FLOPs will remain undetermined due to the lack of information about the architecture. \nEven with this gap, the project can progress to grand challenge with requirement of consultation with the applicants and monitoring when in use.\n\nRecommended for grand challenge. ",
   "_submission_history": [

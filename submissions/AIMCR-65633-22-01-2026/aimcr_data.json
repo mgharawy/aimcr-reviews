@@ -484,11 +484,11 @@
     }
   ],
   "observations": "Additional information by the PI has indicated three datasets and 3 models. All the datasets are comming from Allen Institute for Brain Science. \n\nThe models are small and vision transformers. The number of tokens, though big, still hasn't enabled any of the requested models to accumulate anywhere near the 10^27 threshold. ",
-  "recommendation": "Positive checks passed.\nNegative checks passed. \n10^27 check passed.\n\nRecommended for grand challenge. ",
+  "recommendation": "Positive checks passed.\nNegative checks passed. \n10^27 check passed.\n\nThe final recommendation is to proceed the grand challenge. ",
   "_submission_history": [
     {
-      "timestamp": "2026-01-22T00:35:17.475399",
-      "action": "initial_submission"
+      "timestamp": "2026-01-22T12:24:09.019700",
+      "action": "resubmission"
     }
   ]
 }

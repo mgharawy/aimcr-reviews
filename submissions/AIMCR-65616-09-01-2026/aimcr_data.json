@@ -734,10 +734,10 @@
     }
   ],
   "observations": "Although the software list is unusually short w.r.t. the work that has been discussed, most of the usual software is included in the dependencies. Its a long list.\n\nSmolKalam dataset has been published on HF by a member of the group, without a license. \n\nThe applicant has not provided a source for their in-house  and claim that it will be developed on Shaheen III GPUP based on the Llama decoder with Group Query Attention (introduced in Llama 2). The risk is mitigated because all the public and custom data is generic Arabic text and the model size indicated is approximately 3B. \nEven with the large token count for training, the estimated FLOPS reached will be orders of magnitude less than the threshold. \n\nThere are 7 different models requested in the additional information for inference usecase to generate synthetic datasets before pre-training of the in-house model can begin. They were not discussed in the original proposal. \nTwo models requested are from developed and maintained by entities in D5+M country. However, these are popular language and multimodal models with substantial downloads from HuggingFace. These too have been requested for generation of synthetic multilingual datasets. \n\nQuarterly monitoring to check the model will be sufficient to build more trust. A check needs also to be designed to demonstrate that no other model is being trained further other than the in-house model. ",
-  "recommendation": "Positive check passed.\nNegative check passed. \n10^27 check passed.\nRecommended for the grand challenge with a strong condition of monitoring that the PI will share the in-house developed model for LC2.7 check and jobscripts to demonstrate that the only being pre-trained is the in-house developed model. ",
+  "recommendation": "Positive check passed.\nNegative check passed. \n10^27 check passed.\nInitial recommendation is to proceed with the grand challenge with a strong condition of monitoring that the PI will share the in-house developed model for LC2.7 check and jobscripts to demonstrate that the only being pre-trained is the in-house developed model.",
   "_submission_history": [
     {
-      "timestamp": "2026-01-21T22:40:52.594409",
+      "timestamp": "2026-01-22T12:26:34.296496",
       "action": "resubmission"
     }
   ]

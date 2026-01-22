@@ -893,22 +893,22 @@
       ]
     },
     {
-      "name": "Infinigen",
+      "name": "Pre-Generated Data by Infinigen",
       "checks": [
         {
           "name": "Project & Usage Alignment",
           "score": 1,
-          "notes": " No proposal justification, or description of intended usage."
+          "notes": "Pre-generated dataset as a example, ready to be downloaded from https://infinigen-data.cs.princeton.edu/ , the link is listed on the GitHub repository of the software: https://github.com/princeton-vl/infinigen/tree/main\n\nThe alignment with the research objectives in not clear. \n\nAligns with the approved research topic Datascience and Engineering.\n"
         },
         {
           "name": "Prohibited Use Screening (LC 2.7)",
-          "score": 1,
-          "notes": "No mention of sensitive terms in the documentation."
+          "score": 3,
+          "notes": "There is no documentation to scan."
         },
         {
           "name": "D5+M affiliation Screening (LC 2.5)",
           "score": 1,
-          "notes": "Princeton Vision & Learning Lab - USA: Non-D5"
+          "notes": "Maintained by Princeton Vision & Learning Lab - USA. \nThe entity is a Non-D5 country."
         },
         {
           "name": "Prompts / Fine-tuning Scripts",
@@ -923,12 +923,12 @@
         {
           "name": "Provenance",
           "score": 1,
-          "notes": "https://github.com/princeton-vl/infinigen 6.8K stars, 3K commits, last updated 2 weeks ago The project is maintained by the Princeton Vision & Learning Lab / Princeton University team (repo: princeton-vl/infinigen), with authors listed (e.g., Jia Deng); LinkedIn profiles are publicly available for Jia Deng and Alex Raistrick. https://www.linkedin.com/in/jia-deng-73bb4430 and https://www.linkedin.com/in/araistrick"
+          "notes": "https://github.com/princeton-vl/infinigen 6.8K stars, 3K commits, last updated 2 weeks ago.\n\nThe project is maintained by the Princeton Vision & Learning Lab / Princeton University team (repo: princeton-vl/infinigen), with authors listed (e.g., Jia Deng); \n\nLinkedIn profiles are publicly available for Jia Deng and Alex Raistrick. \nhttps://www.linkedin.com/in/jia-deng-73bb4430 and https://www.linkedin.com/in/araistrick"
         },
         {
           "name": "License / Permissions",
           "score": 1,
-          "notes": "The core Infinigen system is released under the BSD-3-Clause License, permitting broad use, modification, and redistribution.\n\nSome derived dataset variants (e.g., Infinigen-Stereo) use CC BY-NC-SA 4.0, which allows sharing and adaptation but restricts commercial use.\n\nGenerated outputs (synthetic data) generally may be used freely depending on the chosen variant\u2019s license (BSD or CC BY-NC-SA) as specified in its dataset card.\n\nSource code use under BSD allows use in both research and commercial projects without stringent requirements, but attribution under the BSD terms is typically expected."
+          "notes": "The permissibility of use of the pre-generated dataset is embedded in the license of the software itself. \n\nThe core Infinigen system is released under the BSD-3-Clause License, permitting broad use, modification, and redistribution.\n\nGenerated outputs (synthetic data) generally may be used freely depending on the chosen variant\u2019s license (BSD or CC BY-NC-SA) as specified in its dataset card.\n\nSome derived dataset variants (e.g., Infinigen-Stereo) use CC BY-NC-SA 4.0, which allows sharing and adaptation but restricts commercial use.\n\nSource code use under BSD allows use in both research and commercial projects without stringent requirements, but attribution under the BSD terms is typically expected."
         }
       ]
     }
@@ -1120,5 +1120,11 @@
     }
   ],
   "observations": "For TRELLIS.2 model, the HF URL provided is non-existent - assuming the source: https://huggingface.co/microsoft/TRELLIS.2-4B\nInfinigen is not an AI/ML model, but identified as third-party software",
-  "recommendation": "There are several gaps in the information about datasets and models. From AIMCR standpoint, this is more suited as a development project or later if the information is provided, a production project on Shaheen III GPUs. "
+  "recommendation": "Sample inspection of one of pre-generated Infinigen datasets is in progress.",
+  "_submission_history": [
+    {
+      "timestamp": "2026-01-22T17:08:25.272820",
+      "action": "resubmission"
+    }
+  ]
 }

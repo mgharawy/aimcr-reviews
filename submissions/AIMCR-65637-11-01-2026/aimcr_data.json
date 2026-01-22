@@ -533,118 +533,424 @@
           "notes": "Python"
         }
       ]
+    },
+    {
+      "name": "Infingen",
+      "checks": [
+        {
+          "name": "Project & Usage Alignment",
+          "score": 1,
+          "notes": "Infinigen is a Blender-based procedural generator that creates photorealistic 3D scenes/assets entirely from randomized mathematical rules (shape + materials) to produce unlimited synthetic worlds and renders. Infinigen directly supports\nthe goal of expanding limited datasets for underrepresented classes, particularly corals, by procedurally generating additional 3D volumes.\n\nThis was identified as model in \u201cadditional information\u201d but review deems is as a software because it is not an AI model in traditional term."
+        },
+        {
+          "name": "Prohibited Use Screening (LC 2.7)",
+          "score": 1,
+          "notes": "No mention of sensitive terms in the documentation classified in Prohibited Use Screening in accordance with LC 2.7."
+        },
+        {
+          "name": "D5+M affiliation Screening (LC 2.5)",
+          "score": 1,
+          "notes": "Princeton Vision & Learning Lab - USA: Non-D5\n"
+        },
+        {
+          "name": "Source / Provenance",
+          "score": 1,
+          "notes": "URL: https://github.com/princeton-vl/infinigen\n6.8K stars, 3K commits, last updated 2 weeks ago\nThe project is maintained by the Princeton Vision & Learning Lab / Princeton University team (repo: princeton-vl/infinigen), with authors listed (e.g., Jia Deng); LinkedIn profiles are publicly available for Jia Deng and Alex Raistrick. https://www.linkedin.com/in/jia-deng-73bb4430 and https://www.linkedin.com/in/araistrick"
+        },
+        {
+          "name": "License / Permissions",
+          "score": 1,
+          "notes": "BSD 3-Clause License (permissive).\n\nAllows use, modification, and redistribution (source/binary) with required notices and without using contributors\u2019 names for endorsement (per BSD-3 terms"
+        },
+        {
+          "name": "Bundled Tools / Dependencies",
+          "score": 1,
+          "notes": "From requirements.txt in the Github repo:\nabsl-py==2.3.0\nbpy==4.2.0\ncertifi==2025.6.15\ncharset-normalizer==3.4.2\ncloudpickle==3.1.1\ncoacd==1.0.7\ncontourpy==1.3.2\ncycler==0.12.1\nCython==3.1.2\ndaqp==0.7.2\netils==1.12.2\nevdev==1.9.2\nexecnet==2.1.1\nFarama-Notifications==0.0.4\nfonttools==4.58.4\nfrozendict==2.4.6\nfsspec==2025.5.1\ngeomdl==5.4.0\ngin-config==0.5.0\nglfw==2.9.0\ngymnasium==1.2.0\nh5py==3.15.1\nidna==3.10\nimageio==2.31.6\nimportlib_resources==6.5.2\n-e git+ssh://git@github.com/princeton-vl/infinigen_internal.git@5d8872a2ea5bca11470c958c822836df735e4545#egg=infinigen\niniconfig==2.1.0\njoblib==1.5.1\nkiwisolver==1.4.8\nlazy_loader==0.4\nllvmlite==0.45.1\nmathutils==3.3.0\nmatplotlib==3.10.3\nmink==0.0.5\nmujoco==3.3.7\nnetworkx==3.5\nnumba==0.62.1\nnumpy==1.26.4\nopencv-python==4.8.1.78\nOpenEXR==3.3.4\npackaging==25.0\npandas==2.3.0\nPillow==10.0.1\npluggy==1.6.0\npsutil==7.0.0\npybullet==3.2.7\npyglet==1.5.31\nPygments==2.19.1\npynput==1.8.1\nPyOpenGL==3.1.9\npyparsing==3.2.3\npytest==8.4.0\npytest-timeout==2.4.0\npytest-xdist==3.7.0\npython-dateutil==2.9.0.post0\npython-fcl==0.7.0.8\npython-xlib==0.33\npytz==2025.2\nPyWavelets==1.8.0\nqpsolvers==4.8.1\nquadprog==0.1.13\nrequests==2.32.4\n-e git+ssh://git@github.com/ARISE-Initiative/robosuite.git@cb173eb465089b1b4d7038dc8e913f18817f2b0f#egg=robosuite\nrobosuite_models==1.0.0\nrtree==1.4.0\nruff==0.12.0\nscikit-image==0.19.3\nscikit-learn==1.3.2\nscipy==1.15.3\nshapely==2.0.5\nsix==1.17.0\nsubmitit==1.5.3\ntermcolor==3.2.0\nthreadpoolctl==3.6.0\ntifffile==2025.6.11\ntqdm==4.67.1\ntrimesh==3.22.5\ntyping_extensions==4.14.0\ntzdata==2025.2\nurllib3==2.4.0\nusd-core==25.5.1\nuv==0.8.22\nvnoise==0.1.0\nzipp==3.23.0\nzstandard==0.23.0"
+        }
+      ]
     }
   ],
   "source_code": [],
-  "datasets_user_files": [],
+  "datasets_user_files": [
+    {
+      "name": "Objaverse-XL",
+      "checks": [
+        {
+          "name": "Project & Usage Alignment",
+          "score": 1,
+          "notes": "Required for training 3D object generation models and developing text-to-3D synthesis capabilities. Aligns with the approved topic Datascience and engineering"
+        },
+        {
+          "name": "Prohibited Use Screening (LC 2.7)",
+          "score": 1,
+          "notes": "800K+ images of 3D objects. Categories include: Total unique categories: 18 architecture: 76,802 characters-creatures: 59,299 cultural-heritage-history: 55,614 furniture-home: 51,888 art-abstract: 50,310 science-technology: 46,860 weapons-military: 35,189 electronics-gadgets: 28,860 nature-plants: 28,319 animals-pets: 27,479 cars-vehicles: 26,765 places-travel: 18,487 people: 13,199 food-drink: 12,047 fashion-style: 9,595 sports-fitness: 4,200 music: 2,845 news-politics: 951\n\n\"weapons-military\" was inspected and had pictures of avatars of modern and historic e.g. knives, swords, pistols and guns."
+        },
+        {
+          "name": "D5+M affiliation Screening (LC 2.5)",
+          "score": 1,
+          "notes": "Published as artifact of the papers and appears to be maintained by Matt Deitke who works at Meta: https://www.linkedin.com/in/mattdeitke/ https://mattdeitke.com/\nObjaverse: A Universe of Annotated 3D Objects"
+        },
+        {
+          "name": "Prompts / Fine-tuning Scripts",
+          "score": 1,
+          "notes": "No user files provided"
+        },
+        {
+          "name": "Sample Inspection",
+          "score": 1,
+          "notes": "\"weapons-military\" category was inspected and had pictures of avatars of modern and historic e.g. knives, swords, pistols and guns."
+        },
+        {
+          "name": "Provenance",
+          "score": 1,
+          "notes": "https://objaverse.allenai.org/ Published on HuggingFace https://huggingface.co/datasets/allenai/objaverse-xl\nDownloads from Hubgging Face in the month of Nov 2025: 309,132"
+        },
+        {
+          "name": "License / Permissions",
+          "score": 1,
+          "notes": "The use of the dataset as a whole is licensed under the ODC-By v1.0 license. Individual objects in Objaverse are licensed under different licenses. Creation of derivative databases is allowed under this license."
+        }
+      ]
+    },
+    {
+      "name": "TRELLIS-500K",
+      "checks": [
+        {
+          "name": "Project & Usage Alignment",
+          "score": 1,
+          "notes": "The dataset contains 500K 3D assets curated from Objaverse(XL), ABO, 3D-FUTURE, HSSD, and Toys4k, filtered by aesthetic scores for 3D generation tasks."
+        },
+        {
+          "name": "Prohibited Use Screening (LC 2.7)",
+          "score": 1,
+          "notes": "Contains 3D assets  curated from Objaverse-XL, captions and ratings based on aesthetic scores"
+        },
+        {
+          "name": "D5+M affiliation Screening (LC 2.5)",
+          "score": 1,
+          "notes": "The dataset is owned and maintained by Jianfeng Xiang (also known as Jeffrey Xiang) https://jeffreyxiang.github.io/, affiliated with Tsinghua University in China and Microsoft Research Asia as a research intern."
+        },
+        {
+          "name": "Prompts / Fine-tuning Scripts",
+          "score": 1,
+          "notes": "No user files provided."
+        },
+        {
+          "name": "Sample Inspection",
+          "score": 1,
+          "notes": "\"weapons-military\" category was inspected and had pictures of avatars of modern and historic e.g. knives, swords, pistols and guns."
+        },
+        {
+          "name": "Provenance",
+          "score": 1,
+          "notes": "Contains 3D assets  curated from Objaverse-XL, captions and ratings based on aesthetic scores"
+        },
+        {
+          "name": "License / Permissions",
+          "score": 1,
+          "notes": "MIT License Permissions and Restrictions:\n\nUsers may use, copy, modify, merge, publish, distribute, sublicense, and sell the software\nCommercial use is explicitly permitted\nModifications do not need to be open-sourced\nDerivative works can use different licenses\nUsers must include the original copyright notice and license text in all copies\nNo explicit patent rights are granted (unlike Apache 2.0)\nSoftware is provided \"as is\" without warranties of any kind\nAuthors are not liable for damages arising from software use"
+        }
+      ]
+    },
+    {
+      "name": "ScanNet++",
+      "checks": [
+        {
+          "name": "Project & Usage Alignment",
+          "score": 1,
+          "notes": "No proposal justification, or description of intended usage."
+        },
+        {
+          "name": "Prohibited Use Screening (LC 2.7)",
+          "score": 1,
+          "notes": "Under LC 2.7, a review of the ScanNet++ dataset documentation indicates it is a high-fidelity 3D indoor scene dataset intended for novel view synthesis and 3D semantic scene understanding research, and it does not state or imply any prohibited or restricted uses/functionality related to military/defense, weapons development or control, surveillance, or intelligence activities."
+        },
+        {
+          "name": "D5+M affiliation Screening (LC 2.5)",
+          "score": 1,
+          "notes": "Technical University of Munich in Germany Non-D5"
+        },
+        {
+          "name": "Prompts / Fine-tuning Scripts",
+          "score": 1,
+          "notes": "No user files provided."
+        },
+        {
+          "name": "Sample Inspection",
+          "score": 1,
+          "notes": "Some previews available at https://scannetpp.mlsg.cit.tum.de/scannetpp/ Low risk - skipping inspection"
+        },
+        {
+          "name": "Provenance",
+          "score": 1,
+          "notes": "Technical University of Munich Primary Distribution Platform: https://scannetpp.mlsg.cit.tum.de/scannetpp/ Repository: https://github.com/scannetpp/scannetpp (347 stars, 251 commits) Access Method: https://scannetpp.mlsg.cit.tum.de/scannetpp/ Provenance: Maintenance Status: Actively maintained, last commit 19 Dec, 2025."
+        },
+        {
+          "name": "License / Permissions",
+          "score": 1,
+          "notes": "ScanNet++ Terms of Use (Custom License):\n\nRequires account creation and application approval for data access\nUsers receive a personalized token upon approval for downloading\nDataset is released under custom ScanNet++ Terms of Use (not standard open-source license)\nData is anonymized to protect personally identifiable information\nAcademic and research use permitted (specific commercial restrictions available in full terms document)\nUsers must agree to terms before accessing data\nDistribution and sublicensing terms governed by the specific agreement"
+        }
+      ]
+    },
+    {
+      "name": "RealEstate10K",
+      "checks": [
+        {
+          "name": "Project & Usage Alignment",
+          "score": 1,
+          "notes": "No proposal justification, or description of intended usage."
+        },
+        {
+          "name": "Prohibited Use Screening (LC 2.7)",
+          "score": 1,
+          "notes": "No mention of sensitive terms in the documentation."
+        },
+        {
+          "name": "D5+M affiliation Screening (LC 2.5)",
+          "score": 1,
+          "notes": "The dataset is owned and maintained by Google LLC, Non-D5"
+        },
+        {
+          "name": "Prompts / Fine-tuning Scripts",
+          "score": 1,
+          "notes": "No user files provided."
+        },
+        {
+          "name": "Sample Inspection",
+          "score": 1,
+          "notes": "The dataset contains camera poses corresponding to 10 million frames derived from YouTube videos, with camera trajectories obtained through SLAM and bundle adjustment algorithms."
+        },
+        {
+          "name": "Provenance",
+          "score": 1,
+          "notes": "The dataset is owned and maintained by Google LLC.\nSource: https://google.github.io/realestate10k/"
+        },
+        {
+          "name": "License / Permissions",
+          "score": 1,
+          "notes": "Creative Commons Attribution 4.0 International (CC BY 4.0):\n\nUsers may share, copy, distribute, and redistribute the material in any medium or format\nUsers may adapt, remix, transform, and build upon the material for any purpose\nCommercial use is explicitly permitted\nUsers must give appropriate credit (attribution) to the original creator\nUsers must provide a link to the license and indicate if changes were made\nUsers cannot apply additional legal terms or technological measures that restrict others' rights\nUsers cannot suggest the licensor endorses them or their use\nThe license is irrevocable as long as terms are followed\nNo warranties are provided with the licensed material"
+        }
+      ]
+    },
+    {
+      "name": "Stereo4D",
+      "checks": [
+        {
+          "name": "Project & Usage Alignment",
+          "score": 1,
+          "notes": "No proposal justification, or description of intended usage."
+        },
+        {
+          "name": "Prohibited Use Screening (LC 2.7)",
+          "score": 1,
+          "notes": "No mention of sensitive terms in the documentation."
+        },
+        {
+          "name": "D5+M affiliation Screening (LC 2.5)",
+          "score": 1,
+          "notes": "The dataset was created and is maintained by researchers Linyi Jin (affiliated with Google DeepMind & University of Michigan), Richard Tucker, Zhengqi Li (Google DeepMind), David Fouhey (New York University), Noah Snavely (Google DeepMind), and Aleksander Ho\u0142y\u0144ski (Google DeepMind & UC Berkeley). Entities are from Non-D5 countries."
+        },
+        {
+          "name": "Prompts / Fine-tuning Scripts",
+          "score": 1,
+          "notes": "No user files provided."
+        },
+        {
+          "name": "Sample Inspection",
+          "score": 1,
+          "notes": "Stereo4D contains real-world 4D scene reconstructions from internet stereoscopic VR180 videos, including per-frame camera poses, per-pixel pseudo-metric depth, long-term 3D point tracks, and dynamic 3D motion trajectories extracted via depth estimation and tracking methods."
+        },
+        {
+          "name": "Provenance",
+          "score": 1,
+          "notes": "Stereo4D was first created by the research group from ( Google DeepMind, New York University, UC Berkeley & University of Michigan) for their CVPR 2025 paper; the dataset and associated code are maintained through the Stereo4D project\u2019s GitHub repository\n\nhttps://github.com/Stereo4d/stereo4d-code"
+        },
+        {
+          "name": "License / Permissions",
+          "score": 1,
+          "notes": "Released under the CC0-1.0 license, dedicating the data to the public domain.\n\nAnybody may use, modify, and redistribute the data for any purpose, including commercial use.\n\nNo copyright rights are asserted, so no obligations like attribution are legally required under CC0.\n\nPatent rights are not granted by CC0, as CC0 focuses on copyright waiver.\n\nUsers should still respect privacy or other legal restrictions inherent in the raw internet videos that the dataset is based on."
+        }
+      ]
+    },
+    {
+      "name": "KITTI2",
+      "checks": [
+        {
+          "name": "Project & Usage Alignment",
+          "score": 1,
+          "notes": "No proposal justification, or description of intended usage."
+        },
+        {
+          "name": "Prohibited Use Screening (LC 2.7)",
+          "score": 1,
+          "notes": "No mention of sensitive terms in the documentation."
+        },
+        {
+          "name": "D5+M affiliation Screening (LC 2.5)",
+          "score": 1,
+          "notes": "Naver Labs Europe (Naver Corporation) https://europe.naverlabs.com/\nEntity from Non-D5 country."
+        },
+        {
+          "name": "Prompts / Fine-tuning Scripts",
+          "score": 1,
+          "notes": "No user files provided."
+        },
+        {
+          "name": "Sample Inspection",
+          "score": 1,
+          "notes": "Contains synthetic, photo-realistic driving scene dataset that includes stereo RGB image sequences with corresponding depth maps, class and instance segmentation masks, optical and scene flow data, camera parameters, poses, and object metadata across varied weather/lighting and camera configurations."
+        },
+        {
+          "name": "Provenance",
+          "score": 1,
+          "notes": "Virtual KITTI 2 was originally created as an enhanced successor to the Virtual KITTI dataset for simulating KITTI tracking sequences with more realism, with its development led by Yohann Cabon, Naila Murray, and Martin Humenberger , and is hosted and maintained by Naver Labs Europe as the authoritative source.\n\nSource: https://www.changjiangcai.com/studynotes/2020-05-16-Virtual-KITTI-2-Dataset/"
+        },
+        {
+          "name": "License / Permissions",
+          "score": 1,
+          "notes": "The dataset is provided under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 (CC BY-NC-SA 3.0) license, meaning only non-commercial use is permitted.\n\nUsers must give appropriate credit and share derivatives under the same license.\n\nRedistribution or adaptation for commercial purposes is prohibited.\n\nAny modifications or derived works must be licensed similarly (NonCommercial-ShareAlike)."
+        }
+      ]
+    },
+    {
+      "name": "PointOdyssey",
+      "checks": [
+        {
+          "name": "Project & Usage Alignment",
+          "score": 1,
+          "notes": "No proposal justification, or description of intended usage."
+        },
+        {
+          "name": "Prohibited Use Screening (LC 2.7)",
+          "score": 1,
+          "notes": "No mention of sensitive terms in the documentation."
+        },
+        {
+          "name": "D5+M affiliation Screening (LC 2.5)",
+          "score": 1,
+          "notes": "The dataset was created by Yang Zheng (https://www.linkedin.com/in/yang-zheng-977b71221), Adam W. Harley (https://www.linkedin.com/in/adam-harley-860b26287), Bokui Shen (https://www.linkedin.com/in/william-bokui-shen-534706b3), Gordon Wetzstein (https://www.linkedin.com/in/gordon-wetzstein-2406723), and Leonidas J. Guibas (https://www.linkedin.com/in/leonidas-guibas-3232593), researchers primarily associated with Stanford University.\nEntity is from a Non-D5 country."
+        },
+        {
+          "name": "Prompts / Fine-tuning Scripts",
+          "score": 1,
+          "notes": "No user files provided."
+        },
+        {
+          "name": "Sample Inspection",
+          "score": 1,
+          "notes": "Contains synthetic long videos (\u2248159 videos, ~200,000 frames) with multi-modal annotations including RGB, depth, instance segmentation of animals and human subjects in different environments. preview available at https://pointodyssey.com/"
+        },
+        {
+          "name": "Provenance",
+          "score": 1,
+          "notes": "PointOdyssey was first introduced and published alongside an ICCV 2023 paper by the above authors as a synthetic data generation framework and dataset, and is maintained via its project website https://pointodyssey.com/ and GitHub repository https://github.com/y-zheng18/point_odyssey/tree/main by the same research group. Also hosted on HuggingFace at https://huggingface.co/datasets/aharley/pointodyssey"
+        },
+        {
+          "name": "License / Permissions",
+          "score": 1,
+          "notes": "The Hugging Face mirror lists the dataset license as MIT, indicating permissive reuse under standard MIT terms.\n\nThe project\u2019s code and dataset generator appear distributed under permissive terms related to the GitHub repository, though exact original license text on GitHub is not fully visible.\n\nPer the dataset card, the MIT license allows use, modification, and redistribution in both research and commercial contexts with attribution typical of MIT."
+        }
+      ]
+    },
+    {
+      "name": "DynamicReplica",
+      "checks": [
+        {
+          "name": "Project & Usage Alignment",
+          "score": 1,
+          "notes": "No proposal justification, or description of intended usage."
+        },
+        {
+          "name": "Prohibited Use Screening (LC 2.7)",
+          "score": 1,
+          "notes": "No mention of sensitive terms in the documentation."
+        },
+        {
+          "name": "D5+M affiliation Screening (LC 2.5)",
+          "score": 1,
+          "notes": "Created and are maintained by Nikita Karaev (https://uk.linkedin.com/in/nikitakaraev), Ignacio Rocco (https://www.irocco.info/), Benjamin Graham (https://ai.meta.com/people/1287685102197850/benjamin-graham/), Natalia Neverova (https://www.linkedin.com/in/natalia-neverova-14066133), Andrea Vedaldi (https://uk.linkedin.com/in/andreavedaldi), and Christian Rupprecht (https://uk.linkedin.com/in/christian-rupprecht-a46192130?original_referer=https%3A%2F%2Fwww.google.com%2F) affiliated with Meta AI (Meta Platforms, Inc.) and the Visual Geometry Group, University of Oxford. Entities from Non-D5 countries."
+        },
+        {
+          "name": "Prompts / Fine-tuning Scripts",
+          "score": 1,
+          "notes": "No user files provided."
+        },
+        {
+          "name": "Sample Inspection",
+          "score": 1,
+          "notes": "Contains stereo videos of humans objects and animals in different poses. Low risk."
+        },
+        {
+          "name": "Provenance",
+          "score": 1,
+          "notes": "The Dynamic Replica dataset was first introduced alongside the **DynamicStereo model at CVPR 2023 by the above authors, and is hosted via the DynamicStereo project page (https://dynamic-stereo.github.io/) and associated GitHub repository (https://github.com/facebookresearch/dynamic_stereo), with ongoing maintenance tied to Meta AI research releases."
+        },
+        {
+          "name": "License / Permissions",
+          "score": 1,
+          "notes": "The DynamicStereo codebase is primarily licensed under a non-commercial Creative Commons (CC-BY-NC) license for dataset usage, meaning it\u2019s intended for research, educational, or artistic purposes only.\n\nUse, modification, and publication are allowed for research or educational use.\n\nUsage must comply with the Dynamic Replica License Agreement terms, especially regarding non-commercial research; commercial use is restricted to research purposes under the agreement.\n\nPortions of the project code (e.g., third-party components like RAFT-Stereo) are under MIT or Apache 2.0 licenses, but the dataset access terms are separate.\n\nThe dataset download requires accepting a license agreement restricting use to permitted research contexts."
+        }
+      ]
+    },
+    {
+      "name": "Infinigen",
+      "checks": [
+        {
+          "name": "Project & Usage Alignment",
+          "score": 1,
+          "notes": " No proposal justification, or description of intended usage."
+        },
+        {
+          "name": "Prohibited Use Screening (LC 2.7)",
+          "score": 1,
+          "notes": "No mention of sensitive terms in the documentation."
+        },
+        {
+          "name": "D5+M affiliation Screening (LC 2.5)",
+          "score": 1,
+          "notes": "Princeton Vision & Learning Lab - USA: Non-D5"
+        },
+        {
+          "name": "Prompts / Fine-tuning Scripts",
+          "score": 1,
+          "notes": "No user files provided."
+        },
+        {
+          "name": "Sample Inspection",
+          "score": 1,
+          "notes": "Synthetic photorealistic 3D scenes/assets entirely from randomized mathematical rules (shape + materials) to produce unlimited synthetic worlds and renders."
+        },
+        {
+          "name": "Provenance",
+          "score": 1,
+          "notes": "https://github.com/princeton-vl/infinigen 6.8K stars, 3K commits, last updated 2 weeks ago The project is maintained by the Princeton Vision & Learning Lab / Princeton University team (repo: princeton-vl/infinigen), with authors listed (e.g., Jia Deng); LinkedIn profiles are publicly available for Jia Deng and Alex Raistrick. https://www.linkedin.com/in/jia-deng-73bb4430 and https://www.linkedin.com/in/araistrick"
+        },
+        {
+          "name": "License / Permissions",
+          "score": 1,
+          "notes": "The core Infinigen system is released under the BSD-3-Clause License, permitting broad use, modification, and redistribution.\n\nSome derived dataset variants (e.g., Infinigen-Stereo) use CC BY-NC-SA 4.0, which allows sharing and adaptation but restricts commercial use.\n\nGenerated outputs (synthetic data) generally may be used freely depending on the chosen variant\u2019s license (BSD or CC BY-NC-SA) as specified in its dataset card.\n\nSource code use under BSD allows use in both research and commercial projects without stringent requirements, but attribution under the BSD terms is typically expected."
+        }
+      ]
+    }
+  ],
   "models": [
     {
-      "name": "3DShape2VecSet",
+      "name": "Trellis  (TRELLIS-image-large)",
       "checks": [
         {
           "name": "Project & Usage Alignment",
           "score": 1,
-          "notes": "The model is optimized for generative diffusion models to support tasks like 3D shape generation, reconstruction, and conditioning on text, images, or categories.\nThe model serves as a foundational static 3D shape representation in the proposal's objectives for Generative Modeling for 4D Data, providing the basis for extending to a spatiotemporal hierarchical vector set framework called 4DVecSet.\nAligns with the approved research topic Datascience and engineering"
+          "notes": "TRELLIS is a large 3D asset generation model built around a unified Structured LATent\n(SLAT) representation and Rectified Flow Transformers. It\nuses a two-stage pipeline: first generate the sparse SLAT\nstructure, then generate latent vectors for non-empty\ncells, enabling decoding into multiple 3D formats (radiance\nfields / 3D Gaussians / meshes\nTRELLIS is directly relevant as a strong\n3D generative prior / baseline to build upon, adapt, and\nextend toward your proposed 4D foundations (e.g., as an\ninitial generative component before/while developing\nyour own 4D model, and as a comparison point for\nstructured-latent approaches"
         },
         {
           "name": "Prohibited Use Screening (LC 2.7)",
           "score": 1,
-          "notes": "No mention of sensitive terms in the documentation."
+          "notes": "No mention of sensitive terms in the documentation classified in Prohibited Use Screening in accordance with LC 2.7."
         },
         {
-          "name": "Source / Provenance & D5+M Affiliation Screening  (LC 2.5)",
-          "score": 1,
-          "notes": "https://github.com/1zb/3DShape2VecSet\n\nBiao Zhang (@1zb) - Postdoctoral Researcher at KAUST (biao.zhang@kaust.edu.sa), primary maintainer\nJiapeng Tang - Technical University of Munich (TUM)\nMatthias Nie\u00dfner - Professor of Computer Science at TUM\nPeter Wonka - KAUST (also the PI of the current Shaheen III proposal)\n\nThe affiliates are all, except one, from non-D5 countries.\n"
-        },
-        {
-          "name": "License / Permissions",
-          "score": 1,
-          "notes": "MIT License\n\nPermissions:\n\nCommercial use is explicitly allowed\n\nModification and creation of derivatives is permitted\n\nDistribution of original or modified works is allowed\n\nSublicensing is permitted\n\nSelling copies of the software is allowed\n\nCan be incorporated into proprietary software\n\nRestrictions:\n\nMust include original copyright notice and license text in all copies\n\nCannot hold authors liable for any issues or damages\n\nNo warranty is provided (\"as-is\" basis)"
-        },
-        {
-          "name": "Training Data Documentation",
-          "score": 1,
-          "notes": "ShapeNet-v2 dataset across 55 categories of man-made objects, with shapes converted to watertight meshes and sampled with 500,000 dense surface points per shape.\n3D-R2N2 dataset for single-view object reconstruction, consisting of RGB images of size 224x224 rendered from 24 random viewpoints per shape.\nShapeGlot dataset for text prompts in text-driven shape generation.\nPartial point clouds generated by sampling patches from full point clouds for shape completion tasks."
-        },
-        {
-          "name": "Customisation / Fine-tuning",
-          "score": 1,
-          "notes": "no fine tuning of the generalized model has been reported."
-        },
-        {
-          "name": "FLOPS Calculation",
-          "score": 3,
-          "notes": "No clear indication of the number of parameters in the model, according to the documentation. \nThough these are transformer based computer vision models they are generally smaller in size than the LLMs for text based tasks. \nRisk is raised to medium given that the FLOPs can't be evaluated with the given information."
-        },
-        {
-          "name": "Sample Inspection",
-          "score": 1,
-          "notes": "Skipping sample inspection as its KAUST own model."
-        }
-      ]
-    },
-    {
-      "name": "4D-VGGT",
-      "checks": [
-        {
-          "name": "Project & Usage Alignment",
-          "score": 1,
-          "notes": "4D-VGGT is a foundation model that estimates dynamic scene geometry (camera poses, depth maps, point maps, dynamic masks, and 2D/3D point trajectories) from image/video sequences using divide-and-conquer spatiotemporal representation with cross-view global fusion and cross-time local fusion modules.\n\nThe model will be used for the project objective 2 (Combining Generative Modeling and 4D Reconstruction) .\n\nAligns with the approved research topic Datascience and engineering"
-        },
-        {
-          "name": "Prohibited Use Screening (LC 2.7)",
-          "score": 1,
-          "notes": "No mention of sensitive terms in the documentation."
-        },
-        {
-          "name": "Source / Provenance & D5+M Affiliation Screening  (LC 2.5)",
-          "score": 4,
-          "notes": "No source for the model provided. \n\nHaonan Wang (corresponding author, whn_aurora@hust.edu.cn) - School of Artificial Intelligence and Automation, Huazhong University of Science and Technology (HUST), China\n\nHanyu Zhou - School of Computing, National University of Singapore (hy.zhou@nus.edu.sg)\n\nHaoyue Liu - School of AI and Automation, HUST\n\nLuxin Yan - School of AI and Automation, HUST (yanluxin@hust.edu.cn)"
-        },
-        {
-          "name": "License / Permissions",
-          "score": 1,
-          "notes": "no license shown"
-        },
-        {
-          "name": "Training Data Documentation",
-          "score": 1,
-          "notes": "Stage 1 (Per-Task Optimization): ~31.3M samples total across tasks - Camera pose (7.1M samples from Co3Dv2, WildRGB-D, ScanNet, Hypersim, Habitat, Replica), Depth (15.6M samples from BlendedMVS, DL3DV, MegaDepth, Kubric, MVS-Synth, Virtual KITTI 2), Dynamic mask (5.8M samples from Kubric, HOI4D, Dynamic-Replica), Point map (1.6M from Co3Dv2, MegaDepth, WildRGB-D, ScanNet), Tracking (1.2M from TAP-Vid)\n\nStage 2 (Multi-Task Optimization): 8.2M samples from TartanAir, Spring, Omniworld, SpatialVID"
-        },
-        {
-          "name": "Customisation / Fine-tuning",
-          "score": 1,
-          "notes": "The model was trained end-to-end for five geometry tasks: \n\n(1) camera parameter estimation (intrinsics/extrinsics), \n\n(2) depth map estimation, \n\n(3) dynamic mask segmentation, \n\n(4) point map reconstruction, and \n\n(5) 2D/3D point tracking."
-        },
-        {
-          "name": "FLOPS Calculation",
-          "score": 4,
-          "notes": "no model source provided so no evaluation calculated"
-        },
-        {
-          "name": "Sample Inspection",
-          "score": 4,
-          "notes": "no model provided. "
-        }
-      ]
-    },
-    {
-      "name": "Trellis",
-      "checks": [
-        {
-          "name": "Project & Usage Alignment",
-          "score": 1,
-          "notes": "a 3D asset generation model that takes text or image prompts and generates high-quality 3D assets in multiple output formats.\nIt could potentially support Objective 1 (Generative Modeling for 4D Data) of the proposal.\n\nAligns with approved research topic Datascience and engineering."
-        },
-        {
-          "name": "Prohibited Use Screening (LC 2.7)",
-          "score": 1,
-          "notes": "No mention of sensitive terms in the documentation."
-        },
-        {
-          "name": "Source / Provenance & D5+M Affiliation Screening  (LC 2.5)",
+          "name": "Source / Provenance & D5+M Affiliation Screening (LC 2.5)",
           "score": 2,
-          "notes": "https://github.com/microsoft/TRELLIS\n\nMicrosoft Research Asia (Spatial Intelligence Group) - owns and maintains the repository\n\nJianfeng Xiang - Lead author, PhD student at Tsinghua University, Research Intern at MSRA\n\nJiaolong Yang - Principal Research Manager, Microsoft Research Asia (jiaoyan@microsoft.com)\n\nXin Tong - Microsoft Research Asia\n\nAll authors of the paper for which the model is the artifact are affiliated with Microsoft, which is an entity from non-D5 country. "
+          "notes": "https://github.com/microsoft/TRELLIS\nHugging Face: microsoft/TRELLIS-image-large -> 2,398,114  Downloads last month\n\nMicrosoft Research Asia (Spatial Intelligence Group) - owns and maintains the repository\n\nJianfeng Xiang - Lead author, PhD student at Tsinghua University, Research Intern at MSRA\n\nJiaolong Yang - Principal Research Manager, Microsoft Research Asia (jiaoyan@microsoft.com)\n\nXin Tong - Microsoft Research Asia\n\n\nAll authors of the paper for which the model is the artifact are affiliated with Microsoft, which is an entity from non-D5 country. "
         },
         {
           "name": "License / Permissions",
@@ -654,32 +960,165 @@
         {
           "name": "Training Data Documentation",
           "score": 1,
-          "notes": "TRELLIS-500K dataset - 500,000 3D assets curated from five sources:\n\nObjaverse(XL) - largest component\nABO (Amazon Berkeley Objects)\n3D-FUTURE (Alibaba furniture dataset)\nHSSD (Habitat Synthetic Scenes Dataset)\nToys4k"
+          "notes": "TRELLIS-500K dataset - 500,000 3D assets curated from five sources:\n\nObjaverse(XL) - largest component\nABO (Amazon Berkeley Objects)\n3D-FUTURE (Alibaba furniture dataset)\nHSSD (Habitat Synthetic Scenes Dataset)\nToys4k\n\nPretraining data: a carefully collected dataset of ~500K\ndiverse 3D assets (paper states 500K objects; the repo\nalso describes the 500K scale).\nTokens: TRELLIS is primarily trained on 3D assets (and\nrendered views); it is not a text-token pretraining setup in\nthe usual LLM sense. The public materials emphasize\n#assets (500K) rather than a \u201ctoken count.\u201d"
         },
         {
           "name": "Customisation / Fine-tuning",
           "score": 1,
-          "notes": "no separate fine tuning done."
+          "notes": "No separate \u201cdownstream fine-tuning task\u201d is called out\nfor the released HF artifact; the released weights\ncorrespond to the TRELLIS generative model trained for its\nprimary objective (text/image-conditioned 3D generation)"
         },
         {
           "name": "FLOPS Calculation",
           "score": 1,
-          "notes": "TRELLIS-image-large: 1.2 billion parameters\nTRELLIS-text-base: 342 million parameters\nTRELLIS-text-large: 1.1 billion parameters\nTRELLIS-text-xlarge: 2.0 billion parameters (largest model)\n\nModel can be considered well below the threshold given the number of parameters and the number of samples in the dataset."
+          "notes": "TRELLIS-image-large: 1.2 billion parameters\nMFU not provided.\nMissing information to be able to calculate FLOPS\n"
         },
         {
           "name": "Sample Inspection",
           "score": 1,
           "notes": "skipping inspection because of low risk."
         }
-      ]
+      ],
+      "is_proprietary": false
+    },
+    {
+      "name": "Hunyuan3D 2.0",
+      "checks": [
+        {
+          "name": "Project & Usage Alignment",
+          "score": 1,
+          "notes": "A two-stage system\ncomprising Hunyuan3D-DiT (a scalable flow-\nbased Diffusion Transformer for shape\ngeneration) and Hunyuan3D-Paint (a texture\nsynthesis model). It uses a decoupled\npipeline where geometry is generated first,\nfollowed by high-resolution texture map\nsynthesis\nProvides a state-of-the-art\nbenchmark for multi-view consistency and\nhigh-fidelity texture mapping. In the context\nof coral modeling, its decoupled texture\nsynthesis (Hunyuan3D-Paint) is particularly\nrelevant for reconstructing complex surface\npatterns and biological details from 2D\nimagery"
+        },
+        {
+          "name": "Prohibited Use Screening (LC 2.7)",
+          "score": 1,
+          "notes": "No mention of sensitive terms in the documentation classified in Prohibited Use Screening in accordance with LC 2.7."
+        },
+        {
+          "name": "Source / Provenance & D5+M Affiliation Screening (LC 2.5)",
+          "score": 1,
+          "notes": "https://huggingface.co/tencent/Hunyuan3D-2\n64,947 downloads last month \n\nThe model is released and maintained by Tencent (Tencent-Hunyuan / \u201cTencent Hunyuan3D Team\u201d); no maintainer LinkedIn profiles are provided in the model card/docs. Based in China -> D5-Country"
+        },
+        {
+          "name": "License / Permissions",
+          "score": 1,
+          "notes": "License name: \u201cTencent Hunyuan 3D 2.0 Community License Agreement\u201d (release date stated as Jan 21, 2025).\n\nTerritory restriction: license is worldwide excluding EU, UK, and South Korea (use outside the Territory is unlicensed).\n\nRights granted: non-exclusive, non-transferable, royalty-free license to use/modify/distribute in-Territory, subject to Acceptable Use Policy.\n\nRedistribution conditions: must provide a copy of the agreement to recipients; modified files must carry prominent change notices; distributions must include a specified \u201cNotice\u201d file text.\n\nCommercial threshold: if your products/services exceed 1M monthly active users, you must request a separate license/approval from Tencent.\n\nModel-improvement restriction: must not use the works/outputs to improve other AI models (except Hunyuan3D or its derivatives)"
+        },
+        {
+          "name": "Training Data Documentation",
+          "score": 1,
+          "notes": "The public materials describe training on a \u201cself-collected large-scale 3D dataset\u201d with rendered multi-view images (and discuss large 3D datasets such as Objaverse/Objaverse-XL as examples), but they do not provide a single consolidated sample/token count in the visible sections.\n\nTrained on a massive scale of high-quality 3D\nassets (proprietary and public). While\nspecific object counts for v2.0 are not\nexplicitly capped in public papers, it scales\nsignificantly beyond the 1M+ assets used in\nsimilar Tencent models"
+        },
+        {
+          "name": "Customisation / Fine-tuning",
+          "score": 1,
+          "notes": "No fine-tuning on any downstream tasks"
+        },
+        {
+          "name": "FLOPS Calculation",
+          "score": 1,
+          "notes": "# of trainable parameters: ~4.3B total \n\nPrimarily 3D assets and rendered mul\u019f-view\nimages. Numerical \"token\" counts are not\nthe standard metric for this DiT; the scale is\nmeasured in number of high-res 3D assets."
+        },
+        {
+          "name": "Sample Inspection",
+          "score": 1,
+          "notes": "Skipped"
+        }
+      ],
+      "is_proprietary": false
+    },
+    {
+      "name": "TRELLIS.2",
+      "checks": [
+        {
+          "name": "Project & Usage Alignment",
+          "score": 1,
+          "notes": "An evolution of the original TRELLIS, moving from SLAT to the O-Voxel (Omni-Voxel) representation. It features a Sparse Compressed 3D VAE (SC-VAE) providing 16x spatial downsampling and Rectified Flow Transformers. It introduces a native 3D material generation stage for full PBR (Base Color, Metallic, Roughness) support."
+        },
+        {
+          "name": "Prohibited Use Screening (LC 2.7)",
+          "score": 1,
+          "notes": "No mention of sensitive terms in the documentation classified in Prohibited Use Screening in accordance with LC 2.7."
+        },
+        {
+          "name": "Source / Provenance & D5+M Affiliation Screening (LC 2.5)",
+          "score": 1,
+          "notes": "the HF URL provided is non-existent - assuming the source: https://huggingface.co/microsoft/TRELLIS.2-4B \n\nThe project is from Microsoft (Microsoft Research / Microsoft AI) with co-authors including researchers affiliated with Tsinghua University and USTC, and the public release is under the Microsoft \u201cmicrosoft/TRELLIS.2-4B\u201d org on Hugging Face.\nAffiliations based in China: https://www.linkedin.com/in/jiaolong-yang/ -> D5-Country"
+        },
+        {
+          "name": "License / Permissions",
+          "score": 1,
+          "notes": "MIT License (permissive; allows use, modification, distribution, and commercial use subject to MIT terms)."
+        },
+        {
+          "name": "Training Data Documentation",
+          "score": 1,
+          "notes": "TRELLIS.2\u2019s components are trained on public 3D asset datasets: SC-VAE training follows a \u201cTrellis-500K\u201d setup curated from Objaverse-XL, ABO, and HSSD (after filtering assets), while the generative model is trained on an extended ~800K-asset collection augmented with TexVerse, using rendered multi-view images (16 views per asset) as prompts."
+        },
+        {
+          "name": "Customisation / Fine-tuning",
+          "score": 1,
+          "notes": "The released checkpoint is described as a pre-trained foundation model (explicitly \u201cbase model w/o alignment\u201d) and the public materials do not describe downstream fine-tuning targets beyond its core image-to-3D generation pipeline stages (structure/geometry/material generation)."
+        },
+        {
+          "name": "FLOPS Calculation",
+          "score": 1,
+          "notes": "# of trainable parameters:  ~4B parameters \nStructurally Dependent. TRELLIS.2 encodes a $1024^3$ resolution asset into approximately 9.6K latent tokens on average, but the actual sequence length is proportional to the surface area and structural complexity of the model\n\nFLOPs/asset\u22486\u00d7(4\u00d7109)\u00d79600\nFLOPs/epoch\u22482.304\u00d710^14\u00d75\u00d710^5=1.152\u00d710^20"
+        },
+        {
+          "name": "Sample Inspection",
+          "score": 1,
+          "notes": "Skipped"
+        }
+      ],
+      "is_proprietary": false
+    },
+    {
+      "name": "SPAR3D (Stable Point-Aware 3D)",
+      "checks": [
+        {
+          "name": "Project & Usage Alignment",
+          "score": 1,
+          "notes": "SPAR3D (Stable Point-Aware 3D) reconstructs a UV-unwrapped, textured 3D mesh (with material parameters) from a single 512\u00d7512 image using a two-stage pipeline (point-cloud diffusion + regressive meshing) in under ~1 second.\nThe proposal positions models like SPAR3D as high-quality 3D priors that can be integrated with our generative\u2013 reconstruction pipeline, while also noting the need to adapt such models beyond synthetic/dense se\u01abngs to sparse, noisy, and incomplete real observations and to multi-view regimes."
+        },
+        {
+          "name": "Prohibited Use Screening (LC 2.7)",
+          "score": 1,
+          "notes": "No mention of sensitive terms in the documentation classified in Prohibited Use Screening in accordance with LC 2.7."
+        },
+        {
+          "name": "Source / Provenance & D5+M Affiliation Screening (LC 2.5)",
+          "score": 1,
+          "notes": "https://huggingface.co/stabilityai/stable-point-aware-3d -> 813 Downloads last month\nDeveloped by: Stability AI - https://stability.ai/ - UK-based; Non-D5 Country\n"
+        },
+        {
+          "name": "License / Permissions",
+          "score": 1,
+          "notes": "Licensed under Stability AI Community License (\u201cstabilityai-ai-community\u201d on Hugging Face).\n\nEnterprise commercial license required for commercial use by entities/individuals with \u2265 US$1,000,000 annual revenue (and for derivative works in that context)."
+        },
+        {
+          "name": "Training Data Documentation",
+          "score": 1,
+          "notes": "Training uses renders from Objaverse (allenai/objaverse), with a curated subset after license review; the model card does not report a token count (this is not an LLM-style token pretraining setup)."
+        },
+        {
+          "name": "Customisation / Fine-tuning",
+          "score": 1,
+          "notes": "No downstream \u201cfine-tuned tasks\u201d are explicitly listed in the model card beyond its primary task of single-image 3D reconstruction (mesh + texture/material prediction)."
+        },
+        {
+          "name": "FLOPS Calculation",
+          "score": 1,
+          "notes": "# of trainable parameters: 2B\nNo more information on number of tokens or MFU - skipping FLOPS calculation."
+        },
+        {
+          "name": "Sample Inspection",
+          "score": 1,
+          "notes": "Skipped"
+        }
+      ],
+      "is_proprietary": false
     }
   ],
-  "observations": "The proposal has only named datasets but no other information has been provided, therefore no assumptions can be made.\n\n",
-  "recommendation": "There are several gaps in the information about datasets and models. From AIMCR standpoint, this is more suited as a development project or later if the information is provided, a production project on Shaheen III GPUs. ",
-  "_submission_history": [
-    {
-      "timestamp": "2026-01-11T02:15:37.795885",
-      "action": "initial_submission"
-    }
-  ]
+  "observations": "For TRELLIS.2 model, the HF URL provided is non-existent - assuming the source: https://huggingface.co/microsoft/TRELLIS.2-4B\nInfinigen is not an AI/ML model, but identified as third-party software",
+  "recommendation": "There are several gaps in the information about datasets and models. From AIMCR standpoint, this is more suited as a development project or later if the information is provided, a production project on Shaheen III GPUs. "
 }

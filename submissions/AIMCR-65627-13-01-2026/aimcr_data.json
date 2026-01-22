@@ -23,7 +23,7 @@
           "notes": "No mention of sensitive terms in the documentation of PyTorch."
         },
         {
-          "name": "D5+M Affiliation Screening (LC 2.5)",
+          "name": "Restricted Entities Screening (LC 2.5)",
           "score": 1,
           "notes": "Originally developed by Meta and now governed by Linux Foundation."
         },
@@ -58,7 +58,7 @@
           "notes": "No mention of sensitive terms in the documentation of Transformers."
         },
         {
-          "name": "D5+M Affiliation Screening (LC 2.5)",
+          "name": "Restricted Entities Screening (LC 2.5)",
           "score": 1,
           "notes": "Huggingface From a non D5 country."
         },
@@ -93,7 +93,7 @@
           "notes": "No mention of sensitive terms in the documentation."
         },
         {
-          "name": "D5+M Affiliation Screening (LC 2.5)",
+          "name": "Restricted Entities Screening (LC 2.5)",
           "score": 1,
           "notes": "Owned by: Lightning-AI team, William Falcon (https://www.linkedin.com/in/wfalcon)\nFrom an non D5 country."
         },
@@ -128,7 +128,7 @@
           "notes": "No mention of sensitive terms in the documentation."
         },
         {
-          "name": "D5+M Affiliation Screening (LC 2.5)",
+          "name": "Restricted Entities Screening (LC 2.5)",
           "score": 1,
           "notes": "Owned by: Faltiron institute, Simon Aiola (https://www.linkedin.com/in/simone-aiola)\nFrom an non D5 country."
         },
@@ -163,7 +163,7 @@
           "notes": "No mention of sensitive terms in the documentation."
         },
         {
-          "name": "D5+M Affiliation Screening (LC 2.5)",
+          "name": "Restricted Entities Screening (LC 2.5)",
           "score": 1,
           "notes": "Owned by: Alex Rogozhnikov (https://www.linkedin.com/in/alexrogozhnikov/)\nFrom a non D5 country."
         },
@@ -198,7 +198,7 @@
           "notes": "No mention of sensitive terms in the documentation."
         },
         {
-          "name": "D5+M Affiliation Screening (LC 2.5)",
+          "name": "Restricted Entities Screening (LC 2.5)",
           "score": 1,
           "notes": "Its a bonafide community with a governance model and multiple maintainers. https://numpy.org/about/ This is an opensource project with funding sources from entities from non-D5 countries."
         },
@@ -233,7 +233,7 @@
           "notes": "No mention of sensitive terms in the documentation."
         },
         {
-          "name": "D5+M Affiliation Screening (LC 2.5)",
+          "name": "Restricted Entities Screening (LC 2.5)",
           "score": 1,
           "notes": "Its a bonafide community with a governance model and multiple maintainers. https://scipy.org/about/ This is an opensource project with funding sources from entities from non-D5 countries."
         },
@@ -268,7 +268,7 @@
           "notes": "No mention of sensitive terms in the documentation."
         },
         {
-          "name": "D5+M Affiliation Screening (LC 2.5)",
+          "name": "Restricted Entities Screening (LC 2.5)",
           "score": 1,
           "notes": "NVIDIA is entities from non D5 countries"
         },
@@ -303,7 +303,7 @@
           "notes": "No mention of sensitive terms in the documentation."
         },
         {
-          "name": "D5+M Affiliation Screening (LC 2.5)",
+          "name": "Restricted Entities Screening (LC 2.5)",
           "score": 1,
           "notes": "Facebook research / Meta is entities from non D5 countries"
         },
@@ -338,7 +338,7 @@
           "notes": "No mention of sensitive terms in the documentation."
         },
         {
-          "name": "D5+M Affiliation Screening (LC 2.5)",
+          "name": "Restricted Entities Screening (LC 2.5)",
           "score": 1,
           "notes": " E.Z. Lab (Princeton University)  / Ellen Zhong (https://www.linkedin.com/in/zhonge) \nOwner is  from non D5 countries"
         },
@@ -373,7 +373,7 @@
           "notes": "No mention of sensitive terms in the documentation."
         },
         {
-          "name": "D5+M Affiliation Screening (LC 2.5)",
+          "name": "Restricted Entities Screening (LC 2.5)",
           "score": 1,
           "notes": "Owned by: 3dem / Jose Miguel de la Rosa Trevin (https://www.linkedin.com/in/jose-miguel-de-la-rosa-trevin-44863865)\nFrom a non D5 country"
         },
@@ -408,7 +408,7 @@
           "notes": "No mention of sensitive terms in the documentation."
         },
         {
-          "name": "D5+M Affiliation Screening (LC 2.5)",
+          "name": "Restricted Entities Screening (LC 2.5)",
           "score": 1,
           "notes": "Owned by: Structura Biotechnology Inc.\nFrom a non D5 country"
         },
@@ -443,7 +443,7 @@
           "notes": "No mention of sensitive terms in the documentation."
         },
         {
-          "name": "D5+M Affiliation Screening (LC 2.5)",
+          "name": "Restricted Entities Screening (LC 2.5)",
           "score": 1,
           "notes": "Owned by: cryoem / Steve Ludtke (https://www.linkedin.com/in/steven-ludtke-1569aa4)\nFrom a non D5 country"
         },
@@ -478,7 +478,7 @@
           "notes": "No mention of sensitive terms in the documentation."
         },
         {
-          "name": "D5+M Affiliation Screening (LC 2.5)",
+          "name": "Restricted Entities Screening (LC 2.5)",
           "score": 1,
           "notes": "Owned by: ccpem / Colin Palmer (https://www.ccpem.ac.uk/people/colin-palmer/, https://scholar.google.com/citations?hl=en&user=CIeO9pIAAAAJ&view_op=list_works)\nFrom a non D5 country"
         },
@@ -513,7 +513,7 @@
           "notes": "No mention of sensitive terms in the documentation."
         },
         {
-          "name": "D5+M Affiliation Screening (LC 2.5)",
+          "name": "Restricted Entities Screening (LC 2.5)",
           "score": 1,
           "notes": "Owned by: teamtomo / Pranav NM Shah (https://uk.linkedin.com/in/pnmshah)\nFrom a non D5 country"
         },
@@ -548,7 +548,7 @@
           "notes": "No mention of sensitive terms in the documentation."
         },
         {
-          "name": "D5+M Affiliation Screening (LC 2.5)",
+          "name": "Restricted Entities Screening (LC 2.5)",
           "score": 1,
           "notes": "Its a bonafide community with a governance model and multiple maintainers. https://scikit-image.org/#our-team This is an opensource project with funding sources from entities from non-D5 countries."
         },
@@ -583,7 +583,7 @@
           "notes": "No mention of sensitive terms in the documentation."
         },
         {
-          "name": "D5+M Affiliation Screening (LC 2.5)",
+          "name": "Restricted Entities Screening (LC 2.5)",
           "score": 1,
           "notes": "Its a bonafide community with a governance model and multiple maintainers. https://opencv.org/leadership/ This is an opensource project with funding sources from entities from non-D5 countries."
         },
@@ -618,7 +618,7 @@
           "notes": "No mention of sensitive terms in the documentation."
         },
         {
-          "name": "D5+M Affiliation Screening (LC 2.5)",
+          "name": "Restricted Entities Screening (LC 2.5)",
           "score": 1,
           "notes": "Owner: Shayan Shekarforoush (https://ca.linkedin.com/in/shayan-shekarforoush-597508136)\n\nFrom non-D5 countries."
         },
@@ -653,7 +653,7 @@
           "notes": "No mention of sensitive terms in the documentation."
         },
         {
-          "name": "D5+M Affiliation Screening (LC 2.5)",
+          "name": "Restricted Entities Screening (LC 2.5)",
           "score": 3,
           "notes": "Owner:  cellverse tech (https://www.cellverse.tech)\n\nFrom a D5 country (China)."
         },
@@ -688,7 +688,7 @@
           "notes": "No mention of sensitive terms in the documentation."
         },
         {
-          "name": "D5+M Affiliation Screening (LC 2.5)",
+          "name": "Restricted Entities Screening (LC 2.5)",
           "score": 1,
           "notes": "Owner: E.Z. Lab (Princeton University)\n\nFrom a non-D5 country."
         },
@@ -723,7 +723,7 @@
           "notes": "No mention of sensitive terms in the documentation."
         },
         {
-          "name": "D5+M Affiliation Screening (LC 2.5)",
+          "name": "Restricted Entities Screening (LC 2.5)",
           "score": 1,
           "notes": "Owner: Xiao Lei (https://www.zhihu.com/people/ylxx/answers) (Beijing University of Chemical Technology)\n\nFrom a D5 country (China)."
         },
@@ -758,7 +758,7 @@
           "notes": "No mention of sensitive terms in the documentation."
         },
         {
-          "name": "D5+M Affiliation Screening (LC 2.5)",
+          "name": "Restricted Entities Screening (LC 2.5)",
           "score": 1,
           "notes": "Owner: Tensorflow / Google\n\nEntity is from a Non-D5 country."
         },
@@ -793,7 +793,7 @@
           "notes": "No mention of sensitive terms in the documentation."
         },
         {
-          "name": "D5+M Affiliation Screening (LC 2.5)",
+          "name": "Restricted Entities Screening (LC 2.5)",
           "score": 1,
           "notes": "Thomas A Caswell \u2014 project lead \u2014 https://www.linkedin.com/in/tcaswell/\nGovernance: https://matplotlib.org/governance/governance.html#main-governance-document\n\nThis is an opensource project with funding sources from entities from non-D5 countries."
         },
@@ -828,7 +828,7 @@
           "notes": "No mention of sensitive terms in the documentation."
         },
         {
-          "name": "D5+M Affiliation Screening (LC 2.5)",
+          "name": "Restricted Entities Screening (LC 2.5)",
           "score": 1,
           "notes": "Owner:  E.Z. Lab (Princeton University)\n\nEntity from non-D5 countries."
         },
@@ -863,7 +863,7 @@
           "notes": "No mention of sensitive terms in the documentation."
         },
         {
-          "name": "D5+M Affiliation Screening (LC 2.5)",
+          "name": "Restricted Entities Screening (LC 2.5)",
           "score": 1,
           "notes": "Owner:  Huggingface\n\nEntity from non-D5 countries."
         },
@@ -901,7 +901,7 @@
           "notes": "No mention of sensitive terms in the documentation."
         },
         {
-          "name": "D5+M Affiliation Screening (LC 2.5)",
+          "name": "Restricted Entities Screening (LC 2.5)",
           "score": 1,
           "notes": "Owner / Curator: European Molecular Biology Laboratory - European Bioinformatics Institute (EMBL-EBI) https://www.ebi.ac.uk/empiar/\n\nEntity is from a non-D5 country."
         },
@@ -941,7 +941,7 @@
           "notes": "No mention of sensitive terms in the documentation."
         },
         {
-          "name": "D5+M Affiliation Screening (LC 2.5)",
+          "name": "Restricted Entities Screening (LC 2.5)",
           "score": 1,
           "notes": "Owner / Curator: Worldwide Protein Data Bank (wwPDB) partnership  (https://www.wwpdb.org/)\n\nRCSB PDB (United States - Rutgers University and UC San Diego)\n\nPDBe (Europe - EMBL-EBI)\n\nPDBj (Japan)\n\nBMRB (United States)\n\nEMDB (Europe)\n\nEntity is from a non-D5 country."
         },
@@ -981,7 +981,7 @@
           "notes": "No mention of sensitive terms in the documentation."
         },
         {
-          "name": "D5+M Affiliation Screening (LC 2.5)",
+          "name": "Restricted Entities Screening (LC 2.5)",
           "score": 1,
           "notes": "Owner / Curator: European Molecular Biology Laboratory - European Bioinformatics Institute (EMBL-EBI) https://www.ebi.ac.uk/empiar/\n\nEntity is from a non-D5 country."
         },
@@ -1021,7 +1021,7 @@
           "notes": "No mention of sensitive terms in the documentation."
         },
         {
-          "name": "D5+M Affiliation Screening (LC 2.5)",
+          "name": "Restricted Entities Screening (LC 2.5)",
           "score": 3,
           "notes": "Tsinghua University research team (Qiuchen Cao, Hongda Du, Ziyang Xu, Jiawei Zeng, Yongqi Liu, Zhiyuan Liang, Yipu Peng, Jun Yang)\n\nEntity is from a D5 country (China)."
         },
@@ -1061,7 +1061,7 @@
           "notes": "No mention of sensitive terms in the documentation."
         },
         {
-          "name": "D5+M Affiliation Screening (LC 2.5)",
+          "name": "Restricted Entities Screening (LC 2.5)",
           "score": 1,
           "notes": "Ruben Sanchez-Garcia - https://www.linkedin.com/in/rub%C3%A9n-sanchez-garcia-52b5121a9\n\nOwner is from a non-D5 country."
         },
@@ -1101,7 +1101,7 @@
           "notes": "No mention of sensitive terms in the documentation."
         },
         {
-          "name": "D5+M Affiliation Screening (LC 2.5)",
+          "name": "Restricted Entities Screening (LC 2.5)",
           "score": 1,
           "notes": "Owners: Ashwin Dhakal - https://www.linkedin.com/in/ashwin-dhakal\nJianlin Cheng - https://www.linkedin.com/in/jianlin-cheng-26b3135\n\nOwners are from a non-D5 country."
         },
@@ -1126,6 +1126,46 @@
           "notes": "License: MIT License\n\nUse freely for any purpose including academic research, commercial applications, and educational purposes\n\nCite CryoPPP paper (Scientific Data) in publications using DOI: 10.1038/s41597-023-02280-2\n\nShare, modify, and distribute the dataset and processing scripts\n\nUse for machine learning model training, particle picking algorithm development, and benchmarking\n\nCreate derivative works and modified versions\n\nRestrictions:\n\nMust include copyright notice and permission notice in all copies or substantial portions\n\nSoftware provided \"as is\" without warranty of any kind"
         }
       ]
+    },
+    {
+      "name": "CryoFastAR version of cryoDRGN",
+      "checks": [
+        {
+          "name": "Project & Usage Alignment",
+          "score": 1,
+          "notes": "Aligns with the approved research topic Datascience and engineering"
+        },
+        {
+          "name": "Prohibited Use Screening (LC 2.7)",
+          "score": 1,
+          "notes": "No mention of sensitive terms in the documentation."
+        },
+        {
+          "name": "Restricted Entities Screening (LC 2.5)",
+          "score": 1,
+          "notes": "Cellverse is originated in Shanghai, China, a D-5 country."
+        },
+        {
+          "name": "Prompts / Fine-tuning Scripts",
+          "score": 1,
+          "notes": "No finetuning scripts provided."
+        },
+        {
+          "name": "Sample Inspection",
+          "score": 1,
+          "notes": "skipped"
+        },
+        {
+          "name": "Provenance",
+          "score": 1,
+          "notes": "The original Dataset comes from Priceton A.Z. Lab (https://github.com/ml-struct-bio/cryodrgn)\nbut this version is processed by Cellverse and provided via their github repo.\n\nOwner / Curator: https://www.cellverse.tech/#About originated in China\nPrimary Distribution Platform: https://github.com/Cellverse/CryoFastAR?tab=readme-ov-file\nAccess Method: Download link provided by repo readme: https://drive.google.com/file/d/1ryYszBurL6_vyQ9VDcArP6oGk1PNFElZ/view"
+        },
+        {
+          "name": "License / Permissions",
+          "score": 1,
+          "notes": "Can't find it. they only provide citation."
+        }
+      ]
     }
   ],
   "models": [
@@ -1143,7 +1183,7 @@
           "notes": "No mention of sensitive terms in the documentation."
         },
         {
-          "name": "Source / Provenance & D5+M Affiliation Screening  (LC 2.5)",
+          "name": "Source / Provenance & Restricted Entities (LC 2.5)",
           "score": 1,
           "notes": "Owner: Visual Geometry Group\n\nOrganization: University of Oxford; Meta AI\n\nEntity is from Non-D5 country."
         },
@@ -1165,22 +1205,17 @@
         {
           "name": "FLOPS Calculation",
           "score": 1,
-          "notes": "There is no single official FLOPs number published for VGGT.\n\nEstimate for training:\n\nViews\tApprox FLOPs\n\n1 view\t~120 GFLOPs\n2 views\t~360\u2013400GFLOPs\n4 views\t~720\u2013800GFLOPs"
+          "notes": "There is no single official FLOPs number published for VGGT.\n\nEstimate for training:\n\nViews\tApprox FLOPs\n\n1 view\t~120 GFLOPs\n2 views\t~360\u2013400GFLOPs\n4 views\t~720\u2013800GFLOPs\n\n\nProvided MFU: 15.6%\nFLOPs = 3.09 x 10e6 "
         },
         {
           "name": "Sample Inspection",
           "score": 1,
           "notes": "low risk. Skipping sample inspection."
         }
-      ]
+      ],
+      "is_proprietary": false
     }
   ],
   "observations": "Software: CryoFastAR is from China a D5 country and has a vague license, Boxx is from China a D5 country.\nDataset: CryoCRAB is from China a D5 country",
-  "recommendation": "Recommended for grand challenge. ",
-  "_submission_history": [
-    {
-      "timestamp": "2026-01-14T20:21:50.994220",
-      "action": "resubmission"
-    }
-  ]
+  "recommendation": "Recommended for grand challenge. "
 }

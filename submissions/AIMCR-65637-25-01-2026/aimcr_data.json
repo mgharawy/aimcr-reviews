@@ -1021,7 +1021,7 @@
         {
           "name": "Sample Inspection",
           "score": 1,
-          "notes": ""
+          "notes": "During the sample inspection, we reviewed the example workflows provided in the GitHub repository and successfully reproduced them on IBEX. The example inputs consist of PNG images of 2D objects, or multiple images representing different viewpoints (e.g., front, back, and side). The generated output is a single .glb file containing a reconstructed 3D representation of the object.\n\nTo validate the results, we used the Babylon.js Sandbox viewer to open and visualize the generated .glb files. Some examples produce textured 3D outputs, where surface details are clearly rendered (e.g., skin texture or metal rust patterns). The inspected sample objects included a penguin holding a sign labeled \u201cHY3D,\u201d as well as a standing girl figurine."
         }
       ],
       "is_proprietary": false
@@ -1119,8 +1119,8 @@
       "is_proprietary": false
     }
   ],
-  "observations": "TRELLIS-500K was created by a PhD student from Tsinghua University who also works at Microsoft Research Aisa since 2021. \nSame is the case with the model TRELLIS-image-large. The developer and maintainer has the same affiliation as above. \nThe licensing scheme for Objaverse-xl is slightly complex, and the PI must be notified to check if their ultimate release of the model doesn't violate any condition of individual objects from different sources containing their own license. \n\n",
-  "recommendation": "Sample inspection of Hunyuan3D model is in progress.",
+  "observations": "\nTRELLIS-500K was created by a PhD student from Tsinghua University who also works at Microsoft Research Aisa since 2021. \nSame is the case with the model TRELLIS-image-large. The developer and maintainer has the same affiliation as above. \n- The licensing scheme for Objaverse-xl is slightly complex, and the PI must be notified to check if their ultimate release of the model doesn't violate any condition of individual objects from different sources containing their own license. \n- No documentation to scan for the pre-generated data by Infinigen\n",
+  "recommendation": "",
   "_submission_history": [
     {
       "timestamp": "2026-01-25T09:45:37.358336",

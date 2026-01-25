@@ -738,17 +738,17 @@
         {
           "name": "Project & Usage Alignment",
           "score": 1,
-          "notes": "No proposal justification, or description of intended usage."
+          "notes": "The dataset contains over 100,000 real-world 4D scenes from VR180 stereo videos with camera poses, per-pixel pseudo-metric depth, long-term 3D point tracks, and motion trajectories captured from everyday scenes and activities.\n\nThe dataset supports objectives for 4D reconstruction and generative modeling with temporal dynamics, specifically for training models to understand dynamic 3D scenes from sparse views, which aligns with the proposal's goals for combining generative modeling with 4D reconstruction.\n\nAligns with the approved research topic Datascience and Engineering."
         },
         {
           "name": "Prohibited Use Screening (LC 2.7)",
           "score": 1,
-          "notes": "No mention of sensitive terms in the documentation."
+          "notes": "No mention of sensitive terms in the documentation classified in Prohibited Use Screening in accordance with LC 2.7."
         },
         {
           "name": "D5+M affiliation Screening (LC 2.5)",
           "score": 1,
-          "notes": "The dataset was created and is maintained by researchers Linyi Jin (affiliated with Google DeepMind & University of Michigan), Richard Tucker, Zhengqi Li (Google DeepMind), David Fouhey (New York University), Noah Snavely (Google DeepMind), and Aleksander Ho\u0142y\u0144ski (Google DeepMind & UC Berkeley). Entities are from Non-D5 countries."
+          "notes": "The dataset was created and is maintained by researchers Linyi Jin (affiliated with Google DeepMind & University of Michigan), Richard Tucker, Zhengqi Li (Google DeepMind), David Fouhey (New York University), Noah Snavely (Google DeepMind), and Aleksander Ho\u0142y\u0144ski (Google DeepMind & UC Berkeley). \n\nEntities are from Non-D5 countries."
         },
         {
           "name": "Prompts / Fine-tuning Scripts",
@@ -768,7 +768,7 @@
         {
           "name": "License / Permissions",
           "score": 1,
-          "notes": "Released under the CC0-1.0 license, dedicating the data to the public domain.\n\nAnybody may use, modify, and redistribute the data for any purpose, including commercial use.\n\nNo copyright rights are asserted, so no obligations like attribution are legally required under CC0.\n\nPatent rights are not granted by CC0, as CC0 focuses on copyright waiver.\n\nUsers should still respect privacy or other legal restrictions inherent in the raw internet videos that the dataset is based on."
+          "notes": "Released under the CC0-1.0 license, dedicating the data to the public domain.\n\nPermissions:\n\nCopy, modify, distribute and perform the work for any purpose\nCommercial use allowed\nNo attribution legally required (though ethically encouraged)\nWorldwide, royalty-free, irrevocable rights\nWorks are dedicated to public domain"
         }
       ]
     },
@@ -902,7 +902,7 @@
         },
         {
           "name": "Prohibited Use Screening (LC 2.7)",
-          "score": 3,
+          "score": 2,
           "notes": "There is no documentation to scan."
         },
         {
@@ -995,7 +995,7 @@
         },
         {
           "name": "Source / Provenance & D5+M Affiliation Screening (LC 2.5)",
-          "score": 3,
+          "score": 2,
           "notes": "https://huggingface.co/tencent/Hunyuan3D-2\nDownload in Dec 2025: 64947  \n\nhttps://github.com/Tencent-Hunyuan/Hunyuan3D-2\nStars: 13000\nForks: 1300\nPRs: 14\nCommits: 184\nLast commit: 3 months ago\n\nThis model is an artifact of the paper: https://arxiv.org/html/2501.12202v3 \n\nOwned and maintained by Tencent Corporation through the Tencent Hunyuan3D Team (affiliations include Tencent, Microsoft Research, Tsinghua University, USTC, Microsoft AI).\n\nThe entity is from a D5 country. "
         },
         {
@@ -1005,7 +1005,7 @@
         },
         {
           "name": "Training Data Documentation",
-          "score": 4,
+          "score": 2,
           "notes": "Self-collected large-scale 3D dataset including Objaverse, Objaverse-XL, and rendered multi-view images under white-light illumination; exact dataset size not specified in paper.\n\nObjaverse and Objaverse-XL consist of approximately 800K 3D assets. However, the third dataset, \"Self-collected large-scale 3D dataset\" has not been clearly indicated neither on the model card nor in the paper. The information provided for this is:\n- For Texture information\n- Rendered under white-light illumination\n- Reference images with random azimuth and elevation from -20 to 20 degrees\n\nThe sequence length are between 1024 to 3072 (latent token lenght) for multi-resolution training of the model. \nAssuming the all the sequences were of long lenght, i.e. 3072 tokens per 3D asset, and evaluating for the number of assets for two of the 3 datasets, i.e. 800000 3D assets, the total number of token will be:\n\n3072 x 800000 ~ 2.46x10^9 or 2.46B\n\nAdditional information provided by the PI suggests that the number of assets in the training dataset cumulatively exceed 1M objects. Since the upper bound isn't clear, the risk has been elevated. Moreover, the information about the custom dataset used in the pre-training is not sufficient to conclude the nature of the dataset. \n\n\n\n"
         },
         {
@@ -1021,7 +1021,7 @@
         {
           "name": "Sample Inspection",
           "score": 1,
-          "notes": "During the sample inspection, we reviewed the example workflows provided in the GitHub repository and successfully reproduced them on IBEX. The example inputs consist of PNG images of 2D objects, or multiple images representing different viewpoints (e.g., front, back, and side). The generated output is a single .glb file containing a reconstructed 3D representation of the object.\n\nTo validate the results, we used the Babylon.js Sandbox viewer to open and visualize the generated .glb files. Some examples produce textured 3D outputs, where surface details are clearly rendered (e.g., skin texture or metal rust patterns). The inspected sample objects included a penguin holding a sign labeled \u201cHY3D,\u201d as well as a standing girl figurine."
+          "notes": "During the sample inspection, we reviewed the example workflows provided in the GitHub repository and successfully reproduced them on IBEX. The example inputs consist of PNG images of 2D objects, or multiple images representing different viewpoints (e.g., front, back, and side). The generated output is a single .glb file containing a reconstructed 3D representation of the object.\n\nTo validate the results, we used the Babylon.js Sandbox viewer to open and visualize the generated .glb files. Some examples produce textured 3D outputs, where surface details are clearly rendered (e.g., skin texture or metal rust patterns). The inspected sample objects included a penguin holding a sign labeled \u201cHY3D,\u201d as well as a standing girl figurine. \n\nAfter inspection, it is clear that the models, DiT and Paint, are doing what they are described to do in the documentation. They are creating 3D views of the input objects and augmenting the objects with texture features.  No risk has been identified from LC 2.7 perspective. "
         }
       ],
       "is_proprietary": false
@@ -1119,12 +1119,12 @@
       "is_proprietary": false
     }
   ],
-  "observations": "\nTRELLIS-500K was created by a PhD student from Tsinghua University who also works at Microsoft Research Aisa since 2021. \nSame is the case with the model TRELLIS-image-large. The developer and maintainer has the same affiliation as above. \n- The licensing scheme for Objaverse-xl is slightly complex, and the PI must be notified to check if their ultimate release of the model doesn't violate any condition of individual objects from different sources containing their own license. \n- No documentation to scan for the pre-generated data by Infinigen\n",
-  "recommendation": "",
+  "observations": "- TRELLIS-500K was created by a PhD student from Tsinghua University who also works at Microsoft Research Aisa since 2021. \n- Same is the case with the model TRELLIS-image-large. The developer and maintainer has the same affiliation as above. \n- The licensing scheme for Objaverse-xl is slightly complex, and the PI must be notified to check if their ultimate release of the model doesn't violate any condition of individual objects from different sources containing their own license. \n- Although there is no documentation to scan for the pre-generated data by Infinigen, sample inspection was used to screen for LC2.7. \n- Infinigen was identified as model in \u201cadditional information\u201d but review deems it as a software because it is not an AI model in traditional term.\n- In the Objaverse-xl dataset, \"weapons-military\" category was inspected and had pictures of avatars of modern and historic e.g. knives, swords, pistols and guns.\n- In ScanNet++ dataset, an account needs to be created: https://scannetpp.mlsg.cit.tum.de/scannetpp/ to download the data\n- In the Hunyuan3D model, additional information provided by the PI suggests that the number of assets in the training dataset cumulatively exceeds 1M objects, but the upper bound isn't clear, and the information about the custom dataset used in the pre-training is not sufficient to conclude the nature of the dataset.",
+  "recommendation": "- Positive check passed.\n\nThe TRELLIS model and datasets maintainers have affiliations with academic institutions from a D5 country but are also employed at Microsoft Research Aisa. \nThough the lack of documentation for a significant part of the training dataset used for pre-training of Hunyuan3D model and its developer's affiliation with D5 country, the reduction in risk score is enabled by the sample inspection results, which have built enough trust. \n- Negative check passed.\n\n\nOne concern is the inability to estimate correctly the training FLOPS for the existing model.  This could not be done because the number of views/samples/tokens in the large scale self-curated dataset is unclear. Given the current estimate with the data available about the model and the datasets, it is not likely that the pre-training of the existing model would have accumulated FLOPS anywhere near the 10^27 threshold.  \n\n- 10^27 FLOPS check passed.\n\n\nFinal recommendation is to approve the grand challenge.",
   "_submission_history": [
     {
-      "timestamp": "2026-01-25T09:45:37.358336",
-      "action": "initial_submission"
+      "timestamp": "2026-01-25T16:44:15.263737",
+      "action": "resubmission"
     }
   ]
 }

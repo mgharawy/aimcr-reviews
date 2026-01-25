@@ -5,7 +5,7 @@
     "proposal_date": "2025-12-09",
     "reviewer_name": "Mohsin Ahmed Shaikh",
     "reviewer_id": "174988",
-    "aimcr_date": "2026-01-10",
+    "aimcr_date": "2026-01-25",
     "project_id": "65637"
   },
   "third_party_software": [
@@ -1123,7 +1123,7 @@
   "recommendation": "- Positive check passed.\n\nThe TRELLIS model and datasets maintainers have affiliations with academic institutions from a D5 country but are also employed at Microsoft Research Aisa. \nThough the lack of documentation for a significant part of the training dataset used for pre-training of Hunyuan3D model and its developer's affiliation with D5 country, the reduction in risk score is enabled by the sample inspection results, which have built enough trust. \n- Negative check passed.\n\n\nOne concern is the inability to estimate correctly the training FLOPS for the existing model.  This could not be done because the number of views/samples/tokens in the large scale self-curated dataset is unclear. Given the current estimate with the data available about the model and the datasets, it is not likely that the pre-training of the existing model would have accumulated FLOPS anywhere near the 10^27 threshold.  \n\n- 10^27 FLOPS check passed.\n\n\nFinal recommendation is to approve the grand challenge.",
   "_submission_history": [
     {
-      "timestamp": "2026-01-25T16:44:15.263737",
+      "timestamp": "2026-01-25T19:27:02.437885",
       "action": "resubmission"
     }
   ]

@@ -1216,12 +1216,6 @@
       "is_proprietary": false
     }
   ],
-  "observations": "Software: CryoFastAR is from a D5 country and has a vague license; Boxx is from a D5 country.\nDataset: CryoCRAB is from  a D5 country\n\nDataset: Examples from cryoDRGN  is a zip download from a model called CryoFastAR, which is not in the requested list. Only the synthetic/real example data.zip has been requested. The provenance, LC2.7 check and LC2.5 check all cannot be executed because of lack of information. ",
-  "recommendation": "Pending sample inspection on a dataset.",
-  "_submission_history": [
-    {
-      "timestamp": "2026-01-26T00:51:34.383594",
-      "action": "resubmission"
-    }
-  ]
+  "observations": "Software: CryoFastAR is from a D5 country and has a vague license; Boxx is from a D5 country.\nDataset: CryoCRAB is from  a D5 country\n\nDataset: The cryoDRGN synthetic example dataset originates from the Princeton A.Z. Lab but has been processed by Cellverse's CryoFastAR and is distributed via their GitHub repository. The dataset carries a medium to high risk score and its example code is only partially functional, with the synthetic data example failing during sample inspection. More information is available at Cellverse/CryoFastAR - GitHub.",
+  "recommendation": "The suggestion is that if the PI foregoes the potential high risk datasets, the overall risk score of the project will improve. The initial recommendation is to refer to the RCAC Chair for the scientific assessment of potential risks with a suggestion to the PI that if the dataset is avoidable, it can mitigate the potential high risk and result in an overall low risk score for the project. "
 }
